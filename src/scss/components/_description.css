@@ -1,0 +1,19 @@
+.container img {
+    height: 20rem;
+    width: 35rem;
+    border-radius: 1rem;
+}
+.col p {
+    margin-top: 1rem;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+.descEdit{
+    margin-top: 1.5rem;
+    margin-left: 1.9rem;
+}
+@media screen and (max-width: 600px) {
+    .container img {
+      width: 100%;
+    }
+  }
