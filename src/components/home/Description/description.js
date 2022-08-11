@@ -1,5 +1,5 @@
 import React from 'react';
-import { DESCDATA } from '../../../config/DescConfig/config.desc';
+import { DESCDATA } from '../../../config/DescriptionConfig/config.desc';
 import '../../../scss/components/_description.css';
 const Description = () => {
     return (

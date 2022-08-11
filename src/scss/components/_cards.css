@@ -1,6 +1,24 @@
 .container span{
     position: absolute;
-    right: 30px;
+    right: 40px;
     top: 5px;
     z-index: 999;
+}
+.container input {
+    border-radius: 1rem;
+}
+ul {
+    list-style-type: none;
+}
+.cardEdit img{
+    height: 210px;
+    width: 100%;
+}
+.imageInfo{
+    margin-top: 1.2rem;
+}
+.imageInfo p{
+    line-height: 1.5rem;
+    text-align: justify;
+    font-size: 15px;
 }
