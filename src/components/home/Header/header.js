@@ -3,8 +3,8 @@ import { HEADER_DATA } from '../../../config/HeaderConfig/config.header';
 import '../../../scss/components/_header.css';
 const Header = () => {
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="headercolor">
+            <nav className="navbar navbar-expand-lg navbar-light container">
                 <a className="navbar-brand" href="#">
                     Instaraise
                 </a>
@@ -21,7 +21,7 @@ const Header = () => {
                 </button>
 
                 <div
-                    className="collapse navbar-collapse"
+                    className="collapse navbar-collapse "
                     id="navbarSupportedContent"
                 >
                     <ul className="navbar-nav mx-auto">
@@ -47,12 +47,14 @@ const Header = () => {
                     <button>Here</button>
                 </div>
             </nav>
-            {/* {HEADER_DATA.map((props) => (
-                <div>
-                    <h2>{props.CompName}</h2>
-                    <p>{props.CompDesc}</p>
-                </div>
-            ))} */}
+            <div className="container headerBelow">
+                {HEADER_DATA.map((props) => (
+                    <>
+                        <h3>{props.CompName}</h3>
+                        <p>{props.CompDesc}</p>
+                    </>
+                ))}
+            </div>
         </div>
     );
 };

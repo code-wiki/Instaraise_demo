@@ -1,0 +1,15 @@
+.headercolor{
+    background-color: #fafafa;
+}
+nav ul li a {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-weight: 500;
+}
+.headerBelow {
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}
+.headerBelow p {
+    line-height: 1.7rem;
+}
