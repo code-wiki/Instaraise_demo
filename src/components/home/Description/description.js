@@ -13,7 +13,9 @@ const Description = () => {
                         <div className="col descEdit">
                             <h5>{props.descHeading}</h5>
                             <p>{props.descPara}</p>
-                            <h6>Read More</h6>
+                            <h6>
+                                <a href="#">Read More</a>
+                            </h6>
                         </div>
                     </>
                 ))}
