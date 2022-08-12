@@ -8,6 +8,20 @@
     text-align: justify;
     line-height: 1.8rem;
 }
+.descEdit a{
+    text-decoration: none;
+    color: #607D8B;
+    font-weight: bold;
+}
+.descEdit i {
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+.container ul li button h5{
+    font-weight: bold;
+    font-size: 15px;
+    color: #607D8B;
+}
 .descEdit{
     margin-top: 1.5rem;
     margin-left: 1.9rem;

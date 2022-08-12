@@ -15,6 +15,7 @@ const Description = () => {
                             <p>{props.descPara}</p>
                             <h6>
                                 <a href="#">Read More</a>
+                                <i className="fa fa-angle-right"></i>
                             </h6>
                         </div>
                     </>

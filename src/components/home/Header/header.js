@@ -26,25 +26,37 @@ const Header = () => {
                 >
                     <ul className="navbar-nav mx-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">
-                                Webiste
+                            <a
+                                className="nav-link"
+                                href="https://www.instaraise.io/"
+                                target="_blank"
+                            >
+                                <p>Webiste</p>
                                 <span className="sr-only">(current)</span>
                             </a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">
-                                Docs
+                            <a
+                                className="nav-link"
+                                href="https://docs.instaraise.io/"
+                                target="_blank"
+                            >
+                                <p>Docs</p>
                                 <span className="sr-only">(current)</span>
                             </a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">
-                                Apply for Incubation
+                            <a
+                                className="nav-link"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSfCcJ9knICdpYUbUGe82AH91pKsUA6M-u5I2ZHl3xSQ4BmKsg/viewform"
+                                target="_blank"
+                            >
+                                <p>Apply for Incubation</p>
                                 <span className="sr-only">(current)</span>
                             </a>
                         </li>
                     </ul>
-                    <button>Here</button>
+                    <i className="fa fa-moon-o" aria-hidden="true"></i>
                 </div>
             </nav>
             <div className="container headerBelow">

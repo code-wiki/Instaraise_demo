@@ -21,7 +21,7 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 underDeco">
                                 <h4 className="mb-4">
                                     {props.footerNavigation}
                                 </h4>
@@ -29,10 +29,20 @@ const Footer = () => {
                                     <a href="#">{props.footerHome}</a>
                                 </p>
                                 <p>
-                                    <a href="#">{props.footerFarm}</a>
+                                    <a
+                                        href="https://instaraise.io/farms"
+                                        target="_blank"
+                                    >
+                                        {props.footerFarm}
+                                    </a>
                                 </p>
                                 <p>
-                                    <a href="#">{props.footerCommunity}</a>
+                                    <a
+                                        href="https://t.me/Instaraise"
+                                        target="_blank"
+                                    >
+                                        {props.footerCommunity}
+                                    </a>
                                 </p>
                             </div>
                             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">

@@ -4,9 +4,6 @@
     top: 5px;
     z-index: 999;
 }
-.container input {
-    border-radius: 1rem;
-}
 ul {
     list-style-type: none;
 }
@@ -35,4 +32,16 @@ ul {
 .cardEdit :hover{
     background-color: #fafafa;
     border-radius: 1rem;
+}
+.underDeco p a{
+    text-decoration: none;
+}
+.searchEdit{
+    margin-left: 20rem;
+    border-radius: 1rem;
+}
+@media screen and (max-width: 600px){
+    .searchEdit {
+        margin-left: 2rem;
+    }
 }

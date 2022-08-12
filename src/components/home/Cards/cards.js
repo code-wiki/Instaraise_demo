@@ -17,10 +17,10 @@ const Cards = () => {
                     <li>
                         <button
                             type="button"
-                            className="btn btn-light"
+                            className="btn"
                             onClick={() => setItems(CARD_DATA)}
                         >
-                            All
+                            <h5>All</h5>
                         </button>
                     </li>
                 </ul>
@@ -28,10 +28,10 @@ const Cards = () => {
                     <li>
                         <button
                             type="button"
-                            className="btn btn-light"
+                            className="btn"
                             onClick={() => filterItems('DefiTools')}
                         >
-                            Defi tools
+                            <h5>Defi tools</h5>
                         </button>
                     </li>
                 </ul>
@@ -39,24 +39,29 @@ const Cards = () => {
                     <li>
                         <button
                             type="button"
-                            className="btn btn-light"
+                            className="btn"
                             onClick={() => filterItems('DevUpdates')}
                         >
-                            Dev updates
+                            <h5>Dev updates</h5>
                         </button>
                     </li>
                 </ul>
-                <ul className="searchEdit">
+                <ul>
                     <li>
                         <button
                             type="button"
-                            className="btn btn-light"
+                            className="btn"
                             onClick={() => filterItems('Product Exploration')}
                         >
-                            Product exploration
+                            <h5>Product exploration</h5>
                         </button>
                     </li>
                 </ul>
+                <input
+                    type="text"
+                    placeholder="Search Post"
+                    className="searchEdit"
+                />
                 {/* <div className="col-sm-6 col-md-1">All</div>
                 <div className="col-sm-6 col-md-1">DeFi tools</div>
                 <div className="col-sm-6 col-md-1">Dev updates</div>
@@ -76,7 +81,7 @@ const Cards = () => {
             </div>
             <div className="row">
                 {items.map((props) => (
-                    <div className="col-sm-4  py-3 py-sm-0 px-4 cardEdit">
+                    <div className="col-sm-4 py-3 py-sm-0 px-4 cardEdit">
                         <div>
                             <img
                                 src={props.image_url}

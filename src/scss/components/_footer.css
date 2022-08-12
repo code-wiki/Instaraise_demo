@@ -11,6 +11,7 @@
 }
 .social{
     color: #607d8b;
+    font-size: 12px;
 }
 .social hr{
     border-top: 1px solid #8995ab;
@@ -21,4 +22,8 @@
 .container p i{
     color: #607d8b;
     margin-right: 1rem;
+}
+.container h4{
+    font-weight: bold;
+    font-size: 15px;
 }
