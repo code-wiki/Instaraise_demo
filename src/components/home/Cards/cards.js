@@ -4,6 +4,7 @@ import '../../../scss/components/_cards.css';
 import { CARD_DATA } from '../../../config/CardConfig/config.card';
 const Cards = () => {
     const [items, setItems] = useState(CARD_DATA);
+    const [search, setSearch] = useState('');
     const filterItems = (categItem) => {
         const updatedItems = CARD_DATA.filter((curElem) => {
             return curElem.category === categItem;
@@ -57,12 +58,54 @@ const Cards = () => {
                         </button>
                     </li>
                 </ul>
-                <input
-                    type="text"
-                    placeholder="Search Post"
-                    className="searchEdit"
-                />
-                {/* <div className="col-sm-6 col-md-1">All</div>
+                <div>
+                    <input
+                        type="text"
+                        placeholder="Search Post"
+                        className="searchEdit"
+                        onChange={(event) => {
+                            setSearch(event.target.value);
+                        }}
+                    />
+                </div>
+            </div>
+            <div className="row">
+                {items
+                    .filter((props) => {
+                        if (search == '') {
+                            return props;
+                        } else if (
+                            props.subtitle
+                                .toLowerCase()
+                                .includes(search.toLowerCase())
+                        ) {
+                            return props;
+                        }
+                    })
+                    .map((props) => (
+                        <div className="col-sm-4 py-3 py-sm-0 px-4 cardEdit">
+                            <div>
+                                <img
+                                    src={props.image_url}
+                                    alt="image_description"
+                                />
+                                <div className="imageInfo">
+                                    <h5>{props.subtitle}</h5>
+                                    <p>{props.description}</p>
+                                    <p>{props.cardDate}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+            </div>
+        </div>
+    );
+};
+
+export default Cards;
+
+{
+    /* <div className="col-sm-6 col-md-1">All</div>
                 <div className="col-sm-6 col-md-1">DeFi tools</div>
                 <div className="col-sm-6 col-md-1">Dev updates</div>
                 <div className="col-sm-6 col-md-5">Product exploration</div>
@@ -77,27 +120,5 @@ const Cards = () => {
                     <span>
                         <BsSearch />
                     </span>
-                </div> */}
-            </div>
-            <div className="row">
-                {items.map((props) => (
-                    <div className="col-sm-4 py-3 py-sm-0 px-4 cardEdit">
-                        <div>
-                            <img
-                                src={props.image_url}
-                                alt="image_description"
-                            />
-                            <div className="imageInfo">
-                                <h5>{props.subtitle}</h5>
-                                <p>{props.description}</p>
-                                <p>{props.cardDate}</p>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
-};
-
-export default Cards;
+                </div> */
+}
