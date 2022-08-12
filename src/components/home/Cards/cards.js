@@ -37,8 +37,8 @@ const Cards = () => {
             </div>
             <div className="row">
                 {CARD_DATA.map((props) => (
-                    <div className="col-sm-4  py-3 py-sm-0 px-4">
-                        <div className="cardEdit">
+                    <div className="col-sm-4  py-3 py-sm-0 px-4 cardEdit">
+                        <div>
                             <img
                                 src={props.image_url}
                                 alt="image_description"

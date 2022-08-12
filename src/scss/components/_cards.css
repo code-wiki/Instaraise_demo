@@ -26,3 +26,12 @@ ul {
     font-size: 15px;
     margin-top: 1rem;
 }
+.cardEdit img {
+    cursor: pointer;
+}
+.cardEdit h5 {
+    cursor: pointer;
+}
+.cardEdit :hover{
+    background-color: #fafafa;
+}

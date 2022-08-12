@@ -1,0 +1,15 @@
+.aboutHeading{
+    font-size: 14px;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: #607d8b;
+}
+.social{
+    color: #607d8b;
+}
+.social hr{
+    border-top: 1px solid #8995ab;
+}
+.container p a{
+    color: #607d8b;
+}
