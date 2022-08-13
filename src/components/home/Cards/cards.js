@@ -57,11 +57,21 @@ const Cards = () => {
                         </button>
                     </li>
                 </ul>
-                <div>
+                {/* <div>
                     <input
                         type="text"
                         placeholder="Search Post"
                         className="searchEdit"
+                        onChange={(event) => {
+                            setSearch(event.target.value);
+                        }}
+                    />
+                </div> */}
+                <div className="input-group searchEdit">
+                    <input
+                        type="search"
+                        className="form-control"
+                        placeholder="Search Posts"
                         onChange={(event) => {
                             setSearch(event.target.value);
                         }}
@@ -95,7 +105,17 @@ const Cards = () => {
                                 <div className="imageInfo">
                                     <h5>{props.subtitle}</h5>
                                     <p>{props.description}</p>
-                                    <p>{props.cardDate}</p>
+                                    <div className="row dateEdit ">
+                                        <div className="col">
+                                            <h6>{props.cardDate}</h6>
+                                        </div>
+                                        <div className="col readAlign">
+                                            <a href="#">
+                                                Read More
+                                                <i className="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

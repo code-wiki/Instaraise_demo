@@ -20,14 +20,18 @@ ul {
 .imageInfo p{
     line-height: 1.5rem;
     text-align: justify;
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 1rem;
+    color: #607d8b;
 }
+
 .cardEdit img {
     cursor: pointer;
 }
 .cardEdit h5 {
     cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
 }
 .cardEdit :hover{
     background-color: #fafafa;
@@ -36,12 +40,34 @@ ul {
 .underDeco p a{
     text-decoration: none;
 }
-.searchEdit{
-    margin-left: 20rem;
-    border-radius: 1rem;
+.searchEdit {
+    width: auto;
+    left: 19rem;
+}
+.readAlign{
+    font-weight: bold;
+    margin-top: 0.8rem;
+}
+.readAlign a{
+    text-decoration: none;
+    color: #607d8b;
+    margin-left: 3rem;
+}
+.readAlign a i{
+    color: #607d8b;
+    margin-left: 0.5rem;
+}
+.dateEdit h6{
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #1e2329;
+}
+.form-control{
+    border-radius: 1.5rem;
+    background-color:#fafafa;
 }
 @media screen and (max-width: 600px){
     .searchEdit {
-        margin-left: 2rem;
+        left:5rem;
     }
-}
+} 
