@@ -9,8 +9,17 @@ nav ul li a {
     margin-top: 2rem;
     padding-bottom: 2rem;
 }
+.headerBelow h2{
+    font-weight: bold;
+}
 .headerBelow p {
     line-height: 1.7rem;
+    color: #607d8b;
+}
+.iconChg{
+    margin-top: 10px;
+    margin-right: 1rem;
+    font-weight: bold;
 }
 nav ul li a p{
     color: #607D8B;

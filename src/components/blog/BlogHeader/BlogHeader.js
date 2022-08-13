@@ -1,7 +1,8 @@
 import React from 'react';
-import { HEADER_DATA } from '../../../config/HomeConfig/HeaderConfig/config.header';
+import { Link } from 'react-router-dom';
+import { BLOG_HEADER_DATA } from '../../../config/BlogConfig/BlogHeaderConfig/config.blog.header';
 import '../../../scss/components/_header.css';
-const Header = () => {
+const BlogHeader = () => {
     return (
         <div className="headercolor">
             <nav className="navbar navbar-expand-lg navbar-light container">
@@ -60,10 +61,12 @@ const Header = () => {
                 </div>
             </nav>
             <div className="container headerBelow">
-                {HEADER_DATA.map((props, index) => (
-                    <div key={index}>
+                {BLOG_HEADER_DATA.map((props, index) => (
+                    <div key={index} className="d-flex">
+                        <Link to="/">
+                            <i className="fa fa-angle-left iconChg"></i>
+                        </Link>
                         <h2>{props.CompName}</h2>
-                        <p>{props.CompDesc}</p>
                     </div>
                 ))}
             </div>
@@ -71,4 +74,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default BlogHeader;

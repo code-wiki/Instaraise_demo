@@ -1,0 +1,25 @@
+.ContentEdit p {
+    text-align: justify;
+    color: #607D8B;
+}
+.ContentEdit img{
+    width: 100%;
+    height: 60%;
+}
+.paraEdit{
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 15px;
+    color: #607D8B;
+}
+@media screen and (max-width: 600px){
+    .ContentEdit img {
+        height: 40%;
+        width: 22rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .ContentEdit{
+        margin-bottom: 15rem;
+    }
+}
