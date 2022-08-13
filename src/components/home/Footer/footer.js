@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <footer className="bg-light pt-5 pb-4 mt-5">
             <div className="container">
-                {FOOTER_DATA.map((props) => (
-                    <>
+                {FOOTER_DATA.map((props, index) => (
+                    <div key={index}>
                         <div className="row">
                             <div className="col-md-5 mt-3">
                                 <div className="row">
@@ -69,7 +69,7 @@ const Footer = () => {
                             <hr className="mb-4" />
                             {props.footerCopyRight}
                         </div>
-                    </>
+                    </div>
                 ))}
             </div>
         </footer>

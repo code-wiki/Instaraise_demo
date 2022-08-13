@@ -60,11 +60,11 @@ const Header = () => {
                 </div>
             </nav>
             <div className="container headerBelow">
-                {HEADER_DATA.map((props) => (
-                    <>
+                {HEADER_DATA.map((props, index) => (
+                    <div key={index}>
                         <h3>{props.CompName}</h3>
                         <p>{props.CompDesc}</p>
-                    </>
+                    </div>
                 ))}
             </div>
         </div>

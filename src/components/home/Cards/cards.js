@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { BsSearch } from 'react-icons/bs';
 import '../../../scss/components/_cards.css';
 import { CARD_DATA } from '../../../config/CardConfig/config.card';
 const Cards = () => {
@@ -72,7 +71,7 @@ const Cards = () => {
             <div className="row">
                 {items
                     .filter((props) => {
-                        if (search == '') {
+                        if (search === '') {
                             return props;
                         } else if (
                             props.subtitle
@@ -81,9 +80,13 @@ const Cards = () => {
                         ) {
                             return props;
                         }
+                        return false;
                     })
-                    .map((props) => (
-                        <div className="col-sm-4 py-3 py-sm-0 px-4 cardEdit">
+                    .map((props, index) => (
+                        <div
+                            key={index}
+                            className="col-sm-4 py-3 py-sm-0 px-4 cardEdit"
+                        >
                             <div>
                                 <img
                                     src={props.image_url}
@@ -104,8 +107,8 @@ const Cards = () => {
 
 export default Cards;
 
-{
-    /* <div className="col-sm-6 col-md-1">All</div>
+// {
+/* <div className="col-sm-6 col-md-1">All</div>
                 <div className="col-sm-6 col-md-1">DeFi tools</div>
                 <div className="col-sm-6 col-md-1">Dev updates</div>
                 <div className="col-sm-6 col-md-5">Product exploration</div>
@@ -121,4 +124,4 @@ export default Cards;
                         <BsSearch />
                     </span>
                 </div> */
-}
+// }
