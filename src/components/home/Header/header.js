@@ -1,5 +1,5 @@
 import React from 'react';
-import { HEADER_DATA } from '../../../config/HeaderConfig/config.header';
+import { HEADER_DATA } from '../../../config/HomeConfig/HeaderConfig/config.header';
 import '../../../scss/components/_header.css';
 const Header = () => {
     return (
