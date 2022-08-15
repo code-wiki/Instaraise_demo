@@ -19,7 +19,9 @@ const BlogContent = () => {
                     ))}
                 </div>
 
-                <div className="col-3">col-4</div>
+                <div className="col-3">
+                    <h4>Related Posts</h4>
+                </div>
             </div>
         </div>
     );
