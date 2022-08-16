@@ -1,7 +1,7 @@
-.container img {
+.descImg {
     height: 20rem;
-    width: 35rem;
-    border-radius: 1rem;
+    width: 36rem;
+    border-radius: 0.8rem;
 }
 .col p {
     margin-top: 1rem;
@@ -17,22 +17,30 @@
     margin-left: 0.5rem;
     font-weight: bold;
 }
-.container ul li button h5{
+.descEdit{
+    margin-top: 1.5rem;
+    margin-left: 1.2rem;
+}
+.descEdit h5{
+    font-family: font-SemiBold;
+}
+.descEdit p{
+    font-family: font-Regular;
+    color: #607d8b;
+}
+/* .container ul li button h5{
     font-weight: bold;
     font-size: 15px;
     color: #607D8B;
-}
-.descEdit{
-    margin-top: 1.5rem;
-    margin-left: 1.9rem;
-}
+} */
+
 /* @media screen and (max-width: 600px) {
     .container img {
       width: 100%;
     }
   } */
 @media screen and (max-width: 600px){
-    .container img {
+    .descImg {
         width: 22rem;
     }
 }

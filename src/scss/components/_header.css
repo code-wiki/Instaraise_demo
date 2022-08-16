@@ -1,4 +1,4 @@
-.headercolor{
+/* .headercolor{
     background-color: #fafafa;
 }
 nav ul li a {
@@ -24,4 +24,58 @@ nav ul li a {
 nav ul li a p{
     color: #607D8B;
     font-weight: bold;
+}
+.branding a img {
+    width: auto;
+    height: 2rem;
+    margin-right: 0.8rem;
+}
+.compName p{
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+} */
+@font-face {
+    font-family: font-Medium;
+    src: url(../../assets//font//BinancePlex-Medium.ttf);
+}
+@font-face {
+    font-family: font-SemiBold;
+    src: url(../../assets//font//BinancePlex-SemiBold.ttf);
+}
+@font-face {
+    font-family: font-Regular;
+    src: url(../../assets//font//BinancePlexRegular.ttf);
+}
+.site-header{
+    background-color: #fafafa;
+    padding: 1rem 0rem;
+}
+.branding a img {
+    width: auto;
+    height: 2.2rem;
+    margin-right: 0.8rem;
+}
+.compName{
+    font-family: font-Medium;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.collapse ul li a{
+    font-family: font-regular;
+    margin: 1rem;
+    font-weight: 600;
+}
+.form-inline img{
+    cursor: pointer;
+}
+.headerBelow h2{
+    font-family: font-SemiBold;
+    font-weight: 700;
+    line-height: 3rem;
+}
+.headerBelow p {
+    line-height: 1.7rem;
+    font-family: font-regular;
+    color: #607d8b;
 }

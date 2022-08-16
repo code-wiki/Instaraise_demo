@@ -8,7 +8,11 @@ const Description = () => {
                 {DESCDATA.map((props) => (
                     <>
                         <div className="col">
-                            <img src={props.descImage} alt="descData" />
+                            <img
+                                className="descImg"
+                                src={props.descImage}
+                                alt="descData"
+                            />
                         </div>
                         <div className="col descEdit">
                             <h5>{props.descHeading}</h5>
