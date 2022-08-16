@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import IndexHome from '../components/home/IndexHome';
 import IndexBlog from '../components/blog/IndexBlog';
 const Root = () => {
     return (
         <>
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<IndexHome />} />
                     <Route
@@ -18,7 +18,7 @@ const Root = () => {
                         element={<div>Error 404 Page Not Found</div>}
                     />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </>
     );
 };
