@@ -9,8 +9,7 @@ const IndexHome = () => {
         <>
             <Header />
             <Description />
-            {/* <Description />
-            <Cards /> */}
+            <Cards />
         </>
     );
 };
