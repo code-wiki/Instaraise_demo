@@ -61,13 +61,16 @@ nav ul li a p{
     font-weight: bold;
     font-size: 1.5rem;
 }
-.collapse ul li a{
-    font-family: font-regular;
+.collapse ul li a p{
+    font-family: font-Medium;
     margin: 1rem;
-    font-weight: 600;
+    color: #607d8b;
 }
 .form-inline img{
     cursor: pointer;
+}
+.page-title{
+    padding: 2rem 0 1rem;
 }
 .headerBelow h2{
     font-family: font-SemiBold;
