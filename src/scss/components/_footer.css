@@ -15,7 +15,7 @@
     font-size: 12px;
 }
 .social hr{
-    border-top: 1px solid #8995ab;
+    border-top: 0.1px solid #8995ab;
 }
 .container p a{
     color: #607d8b;
@@ -28,12 +28,12 @@
     font-weight: bold;
     font-size: 15px;
 }
-.fontChanges{
+.footer-heading-text{
     font-family: font-Regular;
 }
-.underDeco p a {
+.footer-description-text p a {
     font-family: font-Regular;
 }
-.underDeco{
+.footer-description-text{
     line-height: 1rem;
 }

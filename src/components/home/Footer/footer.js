@@ -12,7 +12,7 @@ const Footer = (val) => {
                             <div className="col-md-5 mt-3">
                                 <div className="row">
                                     <div className="col-md-8">
-                                        <h4 className="mb-4 fontChanges">
+                                        <h4 className="mb-4 footer-heading-text">
                                             {props.footerHeading}
                                         </h4>
                                         <p className="aboutHeading">
@@ -22,10 +22,10 @@ const Footer = (val) => {
                                 </div>
                             </div>
                             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                                <h4 className="mb-4 fontChanges">
+                                <h4 className="mb-4 footer-heading-text">
                                     {props.footerNavigation}
                                 </h4>
-                                <div className="underDeco">
+                                <div className="footer-description-text">
                                     <p>
                                         <a href="#">{props.footerHome}</a>
                                     </p>
@@ -48,7 +48,7 @@ const Footer = (val) => {
                                 </div>
                             </div>
                             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h4 className="mb-4 fontChanges">
+                                <h4 className="mb-4 footer-heading-text">
                                     {props.footerCategories}
                                 </h4>
                                 <p>
