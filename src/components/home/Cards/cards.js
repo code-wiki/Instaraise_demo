@@ -148,22 +148,3 @@ const Cards = () => {
 };
 
 export default Cards;
-
-// {
-/* <div className="col-sm-6 col-md-1">All</div>
-                <div className="col-sm-6 col-md-1">DeFi tools</div>
-                <div className="col-sm-6 col-md-1">Dev updates</div>
-                <div className="col-sm-6 col-md-5">Product exploration</div>
-                <div className=" col-6 col-md-4 input-group rounded">
-                    <input
-                        type="search"
-                        className="form-control"
-                        placeholder="Search"
-                        aria-label="Search"
-                        aria-describedby="search-addon"
-                    />
-                    <span>
-                        <BsSearch />
-                    </span>
-                </div> */
-// }
