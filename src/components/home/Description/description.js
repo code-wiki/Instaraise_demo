@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { DESCDATA } from '../../../config/HomeConfig/DescriptionConfig/config.desc';
 import '../../../scss/components/_description.css';
 const Description = () => {
@@ -18,7 +19,12 @@ const Description = () => {
                             <h5>{props.descHeading}</h5>
                             <p>{props.descPara}</p>
                             <h6>
-                                <a href="#">Read More</a>
+                                <Link
+                                    to="/understanding-decentralised-finance/"
+                                    target="_blank"
+                                >
+                                    Read More
+                                </Link>
                                 <i className="fa fa-angle-right"></i>
                             </h6>
                         </div>

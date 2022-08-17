@@ -12,7 +12,7 @@ const Footer = (val) => {
                             <div className="col-md-5 mt-3">
                                 <div className="row">
                                     <div className="col-md-8">
-                                        <h4 className="mb-4">
+                                        <h4 className="mb-4 fontChanges">
                                             {props.footerHeading}
                                         </h4>
                                         <p className="aboutHeading">
@@ -21,32 +21,34 @@ const Footer = (val) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 underDeco">
-                                <h4 className="mb-4">
+                            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h4 className="mb-4 fontChanges">
                                     {props.footerNavigation}
                                 </h4>
-                                <p>
-                                    <a href="#">{props.footerHome}</a>
-                                </p>
-                                <p>
-                                    <a
-                                        href="https://instaraise.io/farms"
-                                        target="_blank"
-                                    >
-                                        {props.footerFarm}
-                                    </a>
-                                </p>
-                                <p>
-                                    <a
-                                        href="https://t.me/Instaraise"
-                                        target="_blank"
-                                    >
-                                        {props.footerCommunity}
-                                    </a>
-                                </p>
+                                <div className="underDeco">
+                                    <p>
+                                        <a href="#">{props.footerHome}</a>
+                                    </p>
+                                    <p>
+                                        <a
+                                            href="https://instaraise.io/farms"
+                                            target="_blank"
+                                        >
+                                            {props.footerFarm}
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a
+                                            href="https://t.me/Instaraise"
+                                            target="_blank"
+                                        >
+                                            {props.footerCommunity}
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
                             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h4 className="mb-4">
+                                <h4 className="mb-4 fontChanges">
                                     {props.footerCategories}
                                 </h4>
                                 <p>

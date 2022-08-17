@@ -4,10 +4,11 @@
     color: #4E5D78;
 }
 .aboutHeading{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5rem;
     text-align: justify;
     color: #607d8b;
+    font-family: font-Regular;
 }
 .social{
     color: #607d8b;
@@ -26,4 +27,13 @@
 .container h4{
     font-weight: bold;
     font-size: 15px;
+}
+.fontChanges{
+    font-family: font-Regular;
+}
+.underDeco p a {
+    font-family: font-Regular;
+}
+.underDeco{
+    line-height: 1rem;
 }
