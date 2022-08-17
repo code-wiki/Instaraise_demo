@@ -28,18 +28,6 @@
     font-family: font-Regular;
     color: #607d8b;
 }
-
-/* .container ul li button h5{
-    font-weight: bold;
-    font-size: 15px;
-    color: #607D8B;
-} */
-
-/* @media screen and (max-width: 600px) {
-    .container img {
-      width: 100%;
-    }
-  } */
 @media screen and (max-width: 600px){
     .descImg {
         width: 22rem;
