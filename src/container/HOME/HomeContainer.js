@@ -1,12 +1,17 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import HomeComponents from '../../components/home/HomeComponents';
+import { FilterCardData } from '../../redux/actions/HomeActions/action.home';
 
-const HomeContainer = () => {
+const HomeContainer = (props) => {
     return (
         <>
-            <HomeComponents />
+            <HomeComponents {...props} />
         </>
     );
 };
 
-export default HomeContainer;
+const mapStateToProps = (state) => ({
+    currentState: state.ReduxReducer,
+});
+export default connect(mapStateToProps)(HomeContainer);
