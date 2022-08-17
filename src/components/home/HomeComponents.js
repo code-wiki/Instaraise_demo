@@ -3,7 +3,7 @@ import Header from './Header/header';
 import Description from './Description/description';
 import Cards from './Cards/cards';
 
-const IndexHome = () => {
+const HomeComponents = () => {
     //all the home components will be called here
     return (
         <>
@@ -14,4 +14,4 @@ const IndexHome = () => {
     );
 };
 
-export default IndexHome;
+export default HomeComponents;
