@@ -5,7 +5,7 @@ export const CARD_DATA = [
             'http://instaraise.rswebs.in/wp-content/uploads/2022/06/3.jpg',
         subtitle: 'Understanding Decentralized Finance (DeFi) Evolution',
         description:
-            'Decentralized finance (DeFi) is an emerging financial technology based on secure distributed ledgers similar to those used by cryptocurrencies. The system removes the',
+            'Decentralized finance (DeFi) is an emerging financial technology based on secure distributed ledgers similar to those used by cryptocurrencies. The system removes t...',
         cardDate: '27 June, 2022',
     },
     {
@@ -16,7 +16,7 @@ export const CARD_DATA = [
             'Potential of Multichain in DeFi Ecosystem- Instaraise Spaces Recap',
         category: 'DefiTools',
         description:
-            'What’s ahead for the the future of Web3 and DeFi ecosystem? Founders of Instaraise and ShuttleOne discusses the advantages of Multichain and explore th...',
+            'What’s ahead for the the future of Web3 and DeFi ecosystem? Founders of Instaraise and ShuttleOne discusses the advantages of Multichain and explore t...',
         cardDate: '04 June, 2022',
     },
     {

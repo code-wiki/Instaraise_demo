@@ -16,55 +16,73 @@ const Cards = () => {
         <>
             <div className="container mt-5">
                 <div className="row g-0">
-                    <ul>
-                        <li>
-                            <button
-                                type="button"
-                                className="btn"
+                    <ul
+                        className="nav nav-pills mb-3 ml-3"
+                        id="pills-tab"
+                        role="tablist"
+                    >
+                        <li className="nav-item active">
+                            <a
+                                className="nav-link active"
+                                id="pills-home-tab"
+                                data-toggle="pill"
+                                href="#pills-home"
+                                role="tab"
+                                aria-controls="pills-home"
+                                aria-selected="true"
                                 onClick={() => setItems(CARD_DATA)}
                             >
-                                <h5>All</h5>
-                            </button>
+                                <span>All</span>
+                            </a>
                         </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <button
-                                type="button"
-                                className="btn"
+                        <li className="nav-item">
+                            <a
+                                class="nav-link"
+                                id="pills-profile-tab"
+                                data-toggle="pill"
+                                href="#pills-profile"
+                                role="tab"
+                                aria-controls="pills-profile"
+                                aria-selected="false"
                                 onClick={() => filterItems('DefiTools')}
                             >
-                                <h5>Defi tools</h5>
-                            </button>
+                                <span>Defi tools</span>
+                            </a>
                         </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <button
-                                type="button"
-                                className="btn"
+                        <li className="nav-item">
+                            <a
+                                class="nav-link"
+                                id="pills-contact-tab"
+                                data-toggle="pill"
+                                href="#pills-contact"
+                                role="tab"
+                                aria-controls="pills-contact"
+                                aria-selected="false"
                                 onClick={() => filterItems('DevUpdates')}
                             >
-                                <h5>Dev updates</h5>
-                            </button>
+                                <span>Defi updates</span>
+                            </a>
                         </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <button
-                                type="button"
-                                className="btn"
+                        <li className="nav-item">
+                            <a
+                                class="nav-link"
+                                id="pills-contact-tab"
+                                data-toggle="pill"
+                                href="#pills-contact"
+                                role="tab"
+                                aria-controls="pills-contact"
+                                aria-selected="false"
                                 onClick={() =>
                                     filterItems('Product Exploration')
                                 }
                             >
-                                <h5>Product exploration</h5>
-                            </button>
+                                <span>Product exploration</span>
+                            </a>
                         </li>
                     </ul>
                     <div className="input-group searchEdit">
                         <input
-                            type="search"
+                            type="text"
                             className="form-control"
                             placeholder="Search Posts"
                             onChange={(event) => {

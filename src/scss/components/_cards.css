@@ -1,9 +1,26 @@
-.container span{
+/* .container span{
     position: absolute;
     right: 40px;
     top: 5px;
     z-index: 999;
+} */
+.nav-item a span{
+    font-family: font-Medium;
 }
+.nav-pills .nav-link.active{
+    color: #1e2329;
+    background-color: #f5f5f5;
+    padding: 0.5rem 1.3rem;
+    border-radius: 0.5rem;
+}
+.nav-pills .nav-link{
+    display: inline-block;
+    padding: 0rem 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0.5rem 1.3rem;
+}
+
 ul {
     list-style-type: none;
 }
@@ -13,29 +30,27 @@ ul {
 .cardEdit img{
     height: 210px;
     width: 100%;
+    cursor: pointer;
+    border-radius: 0.5rem;
 }
 .imageInfo{
     margin-top: 1.2rem;
 }
 .imageInfo p{
+    font-family: font-Regular;
     line-height: 1.5rem;
     text-align: justify;
-    font-size: 13px;
+    font-size: 14px;
     margin-top: 1rem;
     color: #607d8b;
 }
-
-.cardEdit img {
+.imageInfo h5 {
+    font-family: font-SemiBold;
     cursor: pointer;
-}
-.cardEdit h5 {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 19px;
 }
 .cardEdit :hover{
     background-color: #fafafa;
-    border-radius: 1rem;
 }
 .underDeco p a{
     text-decoration: none;
@@ -50,12 +65,14 @@ ul {
 }
 .readAlign a{
     text-decoration: none;
-    color: #607d8b;
+    color: #4E5D78;
     margin-left: 3rem;
+    font-family: font-SemiBold;
 }
 .readAlign a i{
-    color: #607d8b;
+    color: #4E5D78;
     margin-left: 0.5rem;
+    font-weight: bold;
 }
 .dateEdit h6{
     margin-top: 1rem;
@@ -63,11 +80,21 @@ ul {
     color: #1e2329;
 }
 .form-control{
-    border-radius: 1.5rem;
-    background-color:#fafafa;
+    width: 30rem;
+    border-radius: 6rem;
+    color: #000;
+    display: block;
+    height: 2.5rem;
+    border: none;
+    padding: 0 4rem 0 2.5rem;
+    background-color: #f0f0f0;
 }
-@media screen and (max-width: 600px){
+.form-control::placeholder{
+    font-family: font-Regular;
+}
+@media screen and (max-width: 573px){
     .searchEdit {
-        left:5rem;
+        left:1.5rem;
+        width: 85%;
     }
 } 
