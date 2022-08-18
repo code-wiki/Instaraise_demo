@@ -10,8 +10,10 @@ const HomeContainer = (props) => {
         </>
     );
 };
-
+const mapDispatchToProps = (dispatch) => ({
+    FilterCardData: (payload) => dispatch(FilterCardData(payload)),
+});
 const mapStateToProps = (state) => ({
     currentState: state.ReduxReducer,
 });
-export default connect(mapStateToProps)(HomeContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer);

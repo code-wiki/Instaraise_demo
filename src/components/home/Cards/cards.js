@@ -4,7 +4,7 @@ import '../../../scss/components/_cards.css';
 import { CARD_DATA } from '../../../config/HomeConfig/CardConfig/config.card';
 import Footer from '../Footer/footer';
 
-const Cards = () => {
+const Cards = (props) => {
     const [items, setItems] = useState(CARD_DATA);
     const [search, setSearch] = useState('');
     const filterItems = (categItem) => {
@@ -12,6 +12,10 @@ const Cards = () => {
             return curElem.category === categItem;
         });
         setItems(updatedItems);
+    };
+    console.log(props.currentState);
+    const ReduxFunc = () => {
+        alert('pressed');
     };
     return (
         <>
@@ -45,7 +49,7 @@ const Cards = () => {
                                 role="tab"
                                 aria-controls="pills-profile"
                                 aria-selected="false"
-                                onClick={() => filterItems('DefiTools')}
+                                onClick={() => ReduxFunc()}
                             >
                                 <span>Defi tools</span>
                             </a>

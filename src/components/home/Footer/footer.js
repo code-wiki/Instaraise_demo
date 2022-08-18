@@ -82,7 +82,7 @@ const Footer = (val) => {
                             <hr className="mb-4" />
                         </div>
 
-                        <div className="text-center p-4 social">
+                        <div className="text-center social">
                             <hr className="mb-4" />
                             {props.footerCopyRight}
                         </div>
