@@ -2,7 +2,7 @@ export const CARD_DATA = [
     {
         id: 1,
         image_url:
-            'http://instaraise.rswebs.in/wp-content/uploads/2022/06/3.jpg',
+            'https://blog.instaraise.io/wp-content/uploads/2022/06/3.jpg',
         subtitle: 'Understanding Decentralized Finance (DeFi) Evolution',
         description:
             'Decentralized finance (DeFi) is an emerging financial technology based on secure distributed ledgers similar to those used by cryptocurrencies. The system removes t...',
@@ -11,7 +11,7 @@ export const CARD_DATA = [
     {
         id: 2,
         image_url:
-            'http://instaraise.rswebs.in/wp-content/uploads/2022/06/multichain_2.jpg',
+            'https://blog.instaraise.io/wp-content/uploads/2022/06/multichain_2.jpg',
         subtitle:
             'Potential of Multichain in DeFi Ecosystem- Instaraise Spaces Recap',
         category: 'DefiTools',
@@ -22,7 +22,7 @@ export const CARD_DATA = [
     {
         id: 3,
         image_url:
-            'http://instaraise.rswebs.in/wp-content/uploads/2021/12/token-sale-recap.jpg',
+            'https://blog.instaraise.io/wp-content/uploads/2021/12/token-sale-recap.jpg',
         subtitle:
             'ShuttleOne $SZO Token sale recap: Bringing the award-winning company',
         category: 'DevUpdates',
@@ -33,7 +33,7 @@ export const CARD_DATA = [
     {
         id: 4,
         image_url:
-            'http://instaraise.rswebs.in/wp-content/uploads/2021/11/2.0-1.jpg',
+            'https://blog.instaraise.io/wp-content/uploads/2021/11/2.0-1.jpg',
         subtitle: 'Instaraise v2.0: Defi Universe on Tezos',
         category: 'DevUpdates',
         description:
@@ -43,7 +43,7 @@ export const CARD_DATA = [
     {
         id: 5,
         image_url:
-            'http://instaraise.rswebs.in/wp-content/uploads/2022/07/77BADB10-B49C-447D-8DCE-B2B4483F55F5.jpeg',
+            'https://blog.instaraise.io/wp-content/uploads/2021/08/INSP.jpg',
         subtitle:
             'Shuttleone is all set to step into the Tezos ecosystem through a strategic',
         category: 'DevUpdates',
@@ -54,7 +54,7 @@ export const CARD_DATA = [
     {
         id: 6,
         image_url:
-            'http://instaraise.rswebs.in/wp-content/uploads/2022/07/F4537E54-82CA-4EE8-B89E-E8BC8A19793D.jpeg',
+            'https://blog.instaraise.io/wp-content/uploads/2021/10/idoH.jpg',
         subtitle: 'AqarChain IDO on Instaraise- A quick Recap',
         category: 'DevUpdates',
         description:
@@ -64,7 +64,7 @@ export const CARD_DATA = [
     {
         id: 7,
         image_url:
-            'http://instaraise.rswebs.in/wp-content/uploads/2022/07/A69DC2D2-D515-491D-A504-783EB8E74B61.jpeg',
+            'https://blog.instaraise.io/wp-content/uploads/2021/09/IDORoadmap.jpg',
         subtitle: 'Instaraise IDO Recap and Roadmap',
         description:
             'We have successfully completed our public sale on 9th September 2021 on Instaraise’s own platform. The sale was supposed to be held for 72 hours but surprisingly the...',
@@ -73,7 +73,7 @@ export const CARD_DATA = [
     {
         id: 8,
         image_url:
-            'http://instaraise.rswebs.in/wp-content/uploads/2022/07/110E56CD-FF4D-48B6-A3FF-2B258D817BAE.jpeg',
+            'https://blog.instaraise.io/wp-content/uploads/2021/09/USP_2.jpg',
         subtitle:
             'The Instaraise USP: Projecting Tezos as the Go-to Protocol for DeFi',
         category: 'DevUpdates',
@@ -84,7 +84,7 @@ export const CARD_DATA = [
     {
         id: 9,
         image_url:
-            'http://instaraise.rswebs.in/wp-content/uploads/2022/07/2943DEBC-67F6-463E-B5A4-B50CA7DFE5DD.jpeg',
+            'https://blog.instaraise.io/wp-content/uploads/2021/08/token-allocation-tiers.jpg',
         subtitle: 'Instaraise Token allocation tiers',
         category: 'Product Exploration',
         description:
@@ -94,7 +94,7 @@ export const CARD_DATA = [
     {
         id: 10,
         image_url:
-            'https://instaraise.rswebs.in/wp-content/uploads/2022/07/2943DEBC-67F6-463E-B5A4-B50CA7DFE5DD.jpeg',
+            'https://blog.instaraise.io/wp-content/uploads/2021/08/token-utility.jpg',
         subtitle: 'Instaraise Token Utility',
         description:
             'To operate the launch pad, offer staking rewards, competitions and marketing we are launching a $INSTA FA 2 (Non fungible) token. Users will need to hold this...',

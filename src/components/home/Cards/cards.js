@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import '../../../scss/components/_cards.css';
 import { CARD_DATA } from '../../../config/HomeConfig/CardConfig/config.card';
 import Footer from '../Footer/footer';
+import { SearchItemData } from '../../../redux/actions/HomeActions/action.home';
 
-const Cards = (props) => {
+const Cards = () => {
     const [items, setItems] = useState(CARD_DATA);
     const [search, setSearch] = useState('');
     const filterItems = (categItem) => {

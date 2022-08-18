@@ -38,7 +38,8 @@
     }
 }
 .page-title{
-    padding: 2rem 0 1rem;
+    background-color: #fafafa;
+    padding: 0.5rem 0 1rem;
 }
 .headerBelow h2{
     font-family: font-SemiBold;

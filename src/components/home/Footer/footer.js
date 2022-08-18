@@ -9,7 +9,7 @@ const Footer = (val) => {
                 {FOOTER_DATA.map((props, index) => (
                     <div key={index}>
                         <div className="row">
-                            <div className="col-md-5 mt-3 p-0">
+                            <div className="col-md-5 mt-3">
                                 <div className="row">
                                     <div className="col-md-8">
                                         <h4 className="mb-4 footer-heading-text">
