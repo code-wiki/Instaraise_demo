@@ -7,6 +7,7 @@ export const CARD_DATA = [
         description:
             'Decentralized finance (DeFi) is an emerging financial technology based on secure distributed ledgers similar to those used by cryptocurrencies. The system removes t...',
         cardDate: '27 June, 2022',
+        allCategory: 'All',
     },
     {
         id: 2,
@@ -18,6 +19,7 @@ export const CARD_DATA = [
         description:
             'What’s ahead for the the future of Web3 and DeFi ecosystem? Founders of Instaraise and ShuttleOne discusses the advantages of Multichain and explore t...',
         cardDate: '04 June, 2022',
+        allCategory: 'All',
     },
     {
         id: 3,
@@ -29,6 +31,7 @@ export const CARD_DATA = [
         description:
             'The first-ever decentralized fundraising and incubation protocol on Tezos Ecosystem, Instaraise has successfully concluded another token offering on its IDO platform...',
         cardDate: '21 Dec, 2022',
+        allCategory: 'All',
     },
     {
         id: 4,
@@ -39,6 +42,7 @@ export const CARD_DATA = [
         description:
             'Instaraise is stepping into a new world by creating a DeFi universe for Tezos. With a vision of creating a funnel for onboarding top-notch projects in the ecosystem and...',
         cardDate: '21 June, 2021',
+        allCategory: 'All',
     },
     {
         id: 5,
@@ -50,6 +54,7 @@ export const CARD_DATA = [
         description:
             'Main Takeaways With various products related to the multichain in 2022 roadmap, ShuttleOne aims to help the crypto community to benefit from the best performanc...',
         cardDate: '08 Nov, 2021',
+        allCategory: 'All',
     },
     {
         id: 6,
@@ -60,6 +65,7 @@ export const CARD_DATA = [
         description:
             'Instaraise has successfully completed another IDO on its native IDO platform instaraise.io. AqarChain IDO was completed on the 21st of October 2021 and we are...',
         cardDate: '26 Oct, 2021',
+        allCategory: 'All',
     },
     {
         id: 7,
@@ -69,6 +75,7 @@ export const CARD_DATA = [
         description:
             'We have successfully completed our public sale on 9th September 2021 on Instaraise’s own platform. The sale was supposed to be held for 72 hours but surprisingly the...',
         cardDate: '14 Sep, 2021',
+        allCategory: 'All',
     },
     {
         id: 8,
@@ -80,6 +87,7 @@ export const CARD_DATA = [
         description:
             'The rapidly evolving DeFi space is set to witness some exciting times ahead as Instaraise — the first-ever decentralized fundraising and incubation platform on th...',
         cardDate: '12 Sep, 2021',
+        allCategory: 'All',
     },
     {
         id: 9,
@@ -90,6 +98,7 @@ export const CARD_DATA = [
         description:
             'Instaraise is the first decentralized IDO platform for Tezos. INSTA will empower investors and allow projects creators the ability to provide token sales for upcoming...',
         cardDate: '13 Aug, 2021',
+        allCategory: 'All',
     },
     {
         id: 10,
@@ -99,5 +108,6 @@ export const CARD_DATA = [
         description:
             'To operate the launch pad, offer staking rewards, competitions and marketing we are launching a $INSTA FA 2 (Non fungible) token. Users will need to hold this...',
         cardDate: '12 Aug, 2021',
+        allCategory: 'All',
     },
 ];

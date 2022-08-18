@@ -1,20 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../../scss/components/_cards.css';
-import { CARD_DATA } from '../../../config/HomeConfig/CardConfig/config.card';
-import Footer from '../Footer/footer';
-import { SearchItemData } from '../../../redux/actions/HomeActions/action.home';
 
 const Cards = (props) => {
-    const [items, setItems] = useState(CARD_DATA);
-    const [search, setSearch] = useState('');
-
-    const filterItems = (categItem) => {
-        const updatedItems = CARD_DATA.filter((curElem) => {
-            return curElem.category === categItem;
-        });
-        setItems(updatedItems);
-    };
+    const items = props.currentReducer;
     return (
         <>
             <div className="container mt-5">
@@ -33,7 +22,7 @@ const Cards = (props) => {
                                 role="tab"
                                 aria-controls="pills-home"
                                 aria-selected="true"
-                                onClick={() => setItems(CARD_DATA)}
+                                onClick={() => props.allItemData('All')}
                             >
                                 <span>All</span>
                             </a>
@@ -50,7 +39,6 @@ const Cards = (props) => {
                                 onClick={() =>
                                     props.filterItemData('DefiTools')
                                 }
-                                // onClick={() => filterItems('DefiTools')}
                             >
                                 <span>Defi tools</span>
                             </a>
@@ -64,7 +52,9 @@ const Cards = (props) => {
                                 role="tab"
                                 aria-controls="pills-contact"
                                 aria-selected="false"
-                                onClick={() => filterItems('DevUpdates')}
+                                onClick={() =>
+                                    props.filterItemData('DevUpdates')
+                                }
                             >
                                 <span>Defi updates</span>
                             </a>
@@ -79,7 +69,7 @@ const Cards = (props) => {
                                 aria-controls="pills-contact"
                                 aria-selected="false"
                                 onClick={() =>
-                                    filterItems('Product Exploration')
+                                    props.filterItemData('Product Exploration')
                                 }
                             >
                                 <span>Product exploration</span>
@@ -91,64 +81,43 @@ const Cards = (props) => {
                             type="text"
                             className="form-control"
                             placeholder="Search Posts"
-                            onChange={(event) => {
-                                setSearch(event.target.value);
-                            }}
                         />
                     </div>
                 </div>
                 <div className="row">
-                    {items
-                        .filter((props) => {
-                            if (search === '') {
-                                return props;
-                            } else if (
-                                props.subtitle
-                                    .toLowerCase()
-                                    .includes(search.toLowerCase())
-                            ) {
-                                return props;
-                            }
-                            return false;
-                        })
-                        .map((props, index) => (
-                            <div
-                                key={index}
-                                className="col-sm-4 py-3 py-sm-0 px-4 cardEdit"
-                            >
-                                <div>
-                                    <img
-                                        src={props.image_url}
-                                        alt="image_description"
-                                    />
-                                    <div className="imageInfo">
-                                        <h5>{props.subtitle}</h5>
-                                        <p>{props.description}</p>
-                                        <div className="row dateEdit ">
-                                            <div className="col">
-                                                <h6>{props.cardDate}</h6>
-                                            </div>
-                                            <div className="col readAlign">
-                                                <Link
-                                                    to="/understanding-decentralised-finance/"
-                                                    target="_blank"
-                                                >
-                                                    Read More
-                                                    <i className="fa fa-angle-right"></i>
-                                                </Link>
-                                            </div>
+                    {items.map((props, index) => (
+                        <div
+                            key={index}
+                            className="col-sm-4 py-3 py-sm-0 px-4 cardEdit"
+                        >
+                            <div>
+                                <img
+                                    src={props.image_url}
+                                    alt="image_description"
+                                />
+                                <div className="imageInfo">
+                                    <h5>{props.subtitle}</h5>
+                                    <p>{props.description}</p>
+                                    <div className="row dateEdit ">
+                                        <div className="col">
+                                            <h6>{props.cardDate}</h6>
+                                        </div>
+                                        <div className="col readAlign">
+                                            <Link
+                                                to="/understanding-decentralised-finance/"
+                                                target="_blank"
+                                            >
+                                                Read More
+                                                <i className="fa fa-angle-right"></i>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        ))}
+                        </div>
+                    ))}
                 </div>
             </div>
-            <Footer
-                FunctionCall1={() => filterItems('DefiTools')}
-                FunctionCall2={() => filterItems('DevUpdates')}
-                FunctionCall3={() => filterItems('Product Exploration')}
-            />
         </>
     );
 };
