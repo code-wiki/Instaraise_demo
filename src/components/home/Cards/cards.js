@@ -120,10 +120,7 @@ const Cards = (props) => {
                                                 <h6>{props.cardDate}</h6>
                                             </div>
                                             <div className="col readAlign">
-                                                <Link
-                                                    to="/understanding-decentralised-finance/"
-                                                    target="_blank"
-                                                >
+                                                <Link to="/understanding-decentralised-finance/">
                                                     Read More
                                                     <i className="fa fa-angle-right"></i>
                                                 </Link>

@@ -19,10 +19,7 @@ const Description = () => {
                             <h5>{props.descHeading}</h5>
                             <p>{props.descPara}</p>
                             <h6>
-                                <Link
-                                    to="/understanding-decentralised-finance/"
-                                    target="_blank"
-                                >
+                                <Link to="/understanding-decentralised-finance/">
                                     Read More
                                 </Link>
                                 <i className="fa fa-angle-right"></i>
