@@ -4,6 +4,7 @@ export const CARD_DATA = [
         image_url:
             'https://blog.instaraise.io/wp-content/uploads/2022/06/3.jpg',
         subtitle: 'Understanding Decentralized Finance (DeFi) Evolution',
+        category: 'DefiTools',
         description:
             'Decentralized finance (DeFi) is an emerging financial technology based on secure distributed ledgers similar to those used by cryptocurrencies. The system removes t...',
         cardDate: '27 June, 2022',
@@ -72,6 +73,7 @@ export const CARD_DATA = [
         image_url:
             'https://blog.instaraise.io/wp-content/uploads/2021/09/IDORoadmap.jpg',
         subtitle: 'Instaraise IDO Recap and Roadmap',
+        category: 'DefiTools',
         description:
             'We have successfully completed our public sale on 9th September 2021 on Instaraise’s own platform. The sale was supposed to be held for 72 hours but surprisingly the...',
         cardDate: '14 Sep, 2021',
@@ -105,6 +107,7 @@ export const CARD_DATA = [
         image_url:
             'https://blog.instaraise.io/wp-content/uploads/2021/08/token-utility.jpg',
         subtitle: 'Instaraise Token Utility',
+        category: 'DefiTools',
         description:
             'To operate the launch pad, offer staking rewards, competitions and marketing we are launching a $INSTA FA 2 (Non fungible) token. Users will need to hold this...',
         cardDate: '12 Aug, 2021',
