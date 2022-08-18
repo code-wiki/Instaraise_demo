@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../scss/components/_footer.css';
 import { FOOTER_DATA } from '../../../config/HomeConfig/FooterConfig/config.footer';
 
-const Footer = (val) => {
+const Footer = () => {
     return (
         <footer className="bg-light pt-5 pb-4 mt-5">
             <div className="container">
@@ -53,30 +53,15 @@ const Footer = (val) => {
                                 </h4>
                                 <p>
                                     <i className="fa fa-angle-right"></i>
-                                    <a
-                                        href="#"
-                                        onClick={() => val.FunctionCall1()}
-                                    >
-                                        {props.footerDefi}
-                                    </a>
+                                    <a href="#">{props.footerDefi}</a>
                                 </p>
                                 <p>
                                     <i className="fa fa-angle-right"></i>
-                                    <a
-                                        onClick={() => val.FunctionCall2()}
-                                        href="#"
-                                    >
-                                        {props.footerUpd}
-                                    </a>
+                                    <a href="#">{props.footerUpd}</a>
                                 </p>
                                 <p>
                                     <i className="fa fa-angle-right"></i>
-                                    <a
-                                        href="#"
-                                        onClick={() => val.FunctionCall3()}
-                                    >
-                                        {props.footerProduct}
-                                    </a>
+                                    <a href="#">{props.footerProduct}</a>
                                 </p>
                             </div>
                             <hr className="mb-4" />
