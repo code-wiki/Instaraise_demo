@@ -1,7 +1,7 @@
-import { SEARCH_ITEM } from '../../actions/index.action';
+import { FILTER_CARDS } from '../../actions/index.action';
 export const ReduxReducer = (initialState = '', action) => {
     switch (action.type) {
-        case SEARCH_ITEM:
+        case FILTER_CARDS:
             return action.payload;
         default:
             return initialState;

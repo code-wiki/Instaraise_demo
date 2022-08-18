@@ -3,13 +3,13 @@ import Header from './Header/header';
 import Description from './Description/description';
 import Cards from './Cards/cards';
 
-const HomeComponent = () => {
+const HomeComponent = (props) => {
     //all the home components will be called here
     return (
         <>
-            <Header />
-            <Description />
-            <Cards />
+            <Header {...props} />
+            <Description {...props} />
+            <Cards {...props} />
         </>
     );
 };

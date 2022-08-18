@@ -5,9 +5,10 @@ import { CARD_DATA } from '../../../config/HomeConfig/CardConfig/config.card';
 import Footer from '../Footer/footer';
 import { SearchItemData } from '../../../redux/actions/HomeActions/action.home';
 
-const Cards = () => {
+const Cards = (props) => {
     const [items, setItems] = useState(CARD_DATA);
     const [search, setSearch] = useState('');
+
     const filterItems = (categItem) => {
         const updatedItems = CARD_DATA.filter((curElem) => {
             return curElem.category === categItem;
@@ -46,7 +47,10 @@ const Cards = () => {
                                 role="tab"
                                 aria-controls="pills-profile"
                                 aria-selected="false"
-                                onClick={() => filterItems('DefiTools')}
+                                onClick={() =>
+                                    props.filterItemData('DefiTools')
+                                }
+                                // onClick={() => filterItems('DefiTools')}
                             >
                                 <span>Defi tools</span>
                             </a>
