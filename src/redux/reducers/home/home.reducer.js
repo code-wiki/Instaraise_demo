@@ -1,10 +1,15 @@
-import { FILTER_CARDS } from '../../actions/index.action';
+import { FILTER_CARDS, SEARCH_ITEM } from '../../actions/index.action';
 import { CARD_DATA } from '../../../config/HomeConfig/CardConfig/config.card';
-export const ReduxReducer = (initialState = CARD_DATA, action) => {
+
+const initialState = '';
+export const ReduxReducer = (state = initialState, action) => {
     switch (action.type) {
-        case FILTER_CARDS:
-            return action.payload;
+        case SEARCH_ITEM:
+            return {
+                ...state,
+                text: action.payload,
+            };
         default:
-            return initialState;
+            return state;
     }
 };

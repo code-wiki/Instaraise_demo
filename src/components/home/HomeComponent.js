@@ -3,7 +3,7 @@ import Header from './Header/header';
 import Description from './Description/description';
 import Cards from './Cards/cards';
 
-const HomeComponents = () => {
+const HomeComponent = () => {
     //all the home components will be called here
     return (
         <>
@@ -14,4 +14,4 @@ const HomeComponents = () => {
     );
 };
 
-export default HomeComponents;
+export default HomeComponent;

@@ -13,10 +13,6 @@ const Cards = (props) => {
         });
         setItems(updatedItems);
     };
-    console.log(props.currentState);
-    const ReduxFunc = () => {
-        alert('pressed');
-    };
     return (
         <>
             <div className="container mt-5">
@@ -49,7 +45,7 @@ const Cards = (props) => {
                                 role="tab"
                                 aria-controls="pills-profile"
                                 aria-selected="false"
-                                onClick={() => ReduxFunc()}
+                                onClick={() => filterItems('DefiTools')}
                             >
                                 <span>Defi tools</span>
                             </a>
