@@ -46,7 +46,7 @@ const Cards = (props) => {
                         </li>
                         <li className="nav-item">
                             <a
-                                class="nav-link"
+                                className="nav-link"
                                 id="pills-contact-tab"
                                 data-toggle="pill"
                                 href="#pills-contact"
@@ -62,7 +62,7 @@ const Cards = (props) => {
                         </li>
                         <li className="nav-item">
                             <a
-                                class="nav-link"
+                                className="nav-link"
                                 id="pills-contact-tab"
                                 data-toggle="pill"
                                 href="#pills-contact"

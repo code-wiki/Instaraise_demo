@@ -1,35 +1,43 @@
-.descImg {
-    height: 20rem;
-    width: 35rem;
-    border-radius: 0.8rem;
+.container {
+    padding: 0 2rem;
+    margin: 0 auto;
 }
-.col p {
-    margin-top: 1rem;
+.featured{
+    padding: 3rem 0 0;
+}
+.imageEdit{
+    width: 100%;
+    border-radius: 1rem;
+    display: block;
+    height: 21rem;
+}
+.featured-heading{
+    padding-top: 2rem;
+}
+.featured-heading h5 {
+    margin-bottom: 1rem;
+    font-family: font-SemiBold;
+}
+.featured-heading p {
+    font-family: font-Regular;
+    color: #607d8b;
     text-align: justify;
     line-height: 1.8rem;
 }
-.descEdit a{
+.line-btn {
+    margin-top: 1.5rem;
+}
+.line-btn a {
+    font-weight: 600;
+    padding: 1rem 0;
+    margin-right: 0;
+    transition: .2s;
     text-decoration: none;
     color: #4E5D78;
     font-family: font-SemiBold;
 }
-.descEdit i {
+.line-btn a i{
+    font-weight: 700;
     margin-left: 0.5rem;
-    font-weight: bold;
-}
-.descEdit{
-    margin-top: 1.5rem;
-    margin-left: 1.2rem;
-}
-.descEdit h5{
-    font-family: font-SemiBold;
-}
-.descEdit p{
-    font-family: font-Regular;
-    color: #607d8b;
-}
-@media screen and (max-width: 600px){
-    .descImg {
-        width: 22rem;
-    }
+    font-size: 110%;
 }

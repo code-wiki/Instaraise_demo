@@ -39,7 +39,7 @@ const Header = () => {
                                         href={props.externalLink}
                                         target="_blank"
                                     >
-                                        <p className="d-flex">
+                                        <p>
                                             {props.headerNav}{' '}
                                             <svg
                                                 stroke="currentColor"

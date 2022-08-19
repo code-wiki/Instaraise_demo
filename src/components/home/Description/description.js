@@ -4,31 +4,33 @@ import { DESCDATA } from '../../../config/HomeConfig/DescriptionConfig/config.de
 import '../../../scss/components/_description.css';
 const Description = () => {
     return (
-        <div className="container mt-5">
-            <div className="row">
-                {DESCDATA.map((props) => (
-                    <>
-                        <div className="col">
-                            <img
-                                className="descImg"
-                                src={props.descImage}
-                                alt="descData"
-                            />
-                        </div>
-                        <div className="col descEdit">
-                            <h5>{props.descHeading}</h5>
-                            <p>{props.descPara}</p>
-                            <h6>
-                                <Link to="/understanding-decentralised-finance/">
-                                    Read More
-                                </Link>
-                                <i className="fa fa-angle-right"></i>
-                            </h6>
-                        </div>
-                    </>
-                ))}
+        <section className="featured">
+            <div className="container">
+                <div className="row">
+                    {DESCDATA.map((props) => (
+                        <>
+                            <div className="col-md-6">
+                                <img
+                                    className="imageEdit"
+                                    src={props.descImage}
+                                    alt="descImage"
+                                />
+                            </div>
+                            <div className="col-md-6 featured-heading">
+                                <h5>{props.descHeading}</h5>
+                                <p>{props.descPara}</p>
+                                <div className="line-btn">
+                                    <Link to="/understanding-decentralised-finance/">
+                                        Read More
+                                        <i className="fa fa-angle-right"></i>
+                                    </Link>
+                                </div>
+                            </div>
+                        </>
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 
