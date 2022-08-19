@@ -63,39 +63,3 @@ const BlogContent = () => {
 };
 
 export default BlogContent;
-<body>
-    <article>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <div class="title-section">
-                        <h1>Stacking Sticky Sidebars with Bootstrap 4</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-7">
-                    <div class="content-section">Content Section</div>
-                </div>
-                <div class="col-5">
-                    <div class="sidebar-section">
-                        <div class="sidebar-item sticky-top">
-                            <div class="sidebar-content">Container 1</div>
-                        </div>
-                        <div class="sidebar-item sticky-top">
-                            <div class="sidebar-content">Container 2</div>
-                        </div>
-
-                        <div class="sidebar-item sticky-top">
-                            <div class="sidebar-content">Container 3</div>
-                        </div>
-
-                        <div class="sidebar-item sticky-top">
-                            <div class="sidebar-content">Container 4</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </article>
-</body>;
