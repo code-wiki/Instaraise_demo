@@ -9,74 +9,78 @@ const Cards = (props) => {
         <>
             <div className="container mt-5">
                 <div className="row g-0">
-                    <ul
-                        className="nav nav-pills mb-3 ml-3"
-                        id="pills-tab"
-                        role="tablist"
-                    >
-                        <li className="nav-item active">
-                            <a
-                                className="nav-link active"
-                                id="pills-home-tab"
-                                data-toggle="pill"
-                                href="#pills-home"
-                                role="tab"
-                                aria-controls="pills-home"
-                                aria-selected="true"
-                                onClick={() => props.allItemData('All')}
-                            >
-                                <span>All</span>
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a
-                                class="nav-link"
-                                id="pills-profile-tab"
-                                data-toggle="pill"
-                                href="#pills-profile"
-                                role="tab"
-                                aria-controls="pills-profile"
-                                aria-selected="false"
-                                onClick={() =>
-                                    props.filterItemData('DefiTools')
-                                }
-                            >
-                                <span>Defi tools</span>
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a
-                                className="nav-link"
-                                id="pills-contact-tab"
-                                data-toggle="pill"
-                                href="#pills-contact"
-                                role="tab"
-                                aria-controls="pills-contact"
-                                aria-selected="false"
-                                onClick={() =>
-                                    props.filterItemData('DevUpdates')
-                                }
-                            >
-                                <span>Defi updates</span>
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a
-                                className="nav-link"
-                                id="pills-contact-tab"
-                                data-toggle="pill"
-                                href="#pills-contact"
-                                role="tab"
-                                aria-controls="pills-contact"
-                                aria-selected="false"
-                                onClick={() =>
-                                    props.filterItemData('Product Exploration')
-                                }
-                            >
-                                <span>Product exploration</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <div className="col">
+                        <ul
+                            className="nav nav-pills mb-3 ml-3"
+                            id="pills-tab"
+                            role="tablist"
+                        >
+                            <li className="nav-item active">
+                                <a
+                                    className="nav-link active"
+                                    id="pills-home-tab"
+                                    data-toggle="pill"
+                                    href="#pills-home"
+                                    role="tab"
+                                    aria-controls="pills-home"
+                                    aria-selected="true"
+                                    onClick={() => props.allItemData('All')}
+                                >
+                                    <span>All</span>
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    class="nav-link"
+                                    id="pills-profile-tab"
+                                    data-toggle="pill"
+                                    href="#pills-profile"
+                                    role="tab"
+                                    aria-controls="pills-profile"
+                                    aria-selected="false"
+                                    onClick={() =>
+                                        props.filterItemData('DefiTools')
+                                    }
+                                >
+                                    <span>Defi tools</span>
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className="nav-link"
+                                    id="pills-contact-tab"
+                                    data-toggle="pill"
+                                    href="#pills-contact"
+                                    role="tab"
+                                    aria-controls="pills-contact"
+                                    aria-selected="false"
+                                    onClick={() =>
+                                        props.filterItemData('DevUpdates')
+                                    }
+                                >
+                                    <span>Defi updates</span>
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className="nav-link"
+                                    id="pills-contact-tab"
+                                    data-toggle="pill"
+                                    href="#pills-contact"
+                                    role="tab"
+                                    aria-controls="pills-contact"
+                                    aria-selected="false"
+                                    onClick={() =>
+                                        props.filterItemData(
+                                            'Product Exploration'
+                                        )
+                                    }
+                                >
+                                    <span>Product exploration</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <div className="input-group searchEdit">
                         <input
                             type="text"
