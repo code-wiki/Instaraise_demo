@@ -88,7 +88,7 @@ const Cards = (props) => {
                         />
                     </div>
                 </div>
-                <div className="row">
+                <div className="row hoverChange">
                     {items
                         .filter((props) => {
                             if (search === '') {
@@ -103,11 +103,11 @@ const Cards = (props) => {
                             return false;
                         })
                         .map((props, index) => (
-                            <div
-                                key={index}
-                                className="col-sm-4 py-3 py-sm-0 px-4 cardEdit"
-                            >
-                                <div>
+                            <>
+                                <div
+                                    key={index}
+                                    className="col-md-4 py-3 py-sm-0 px-4 cardEdit"
+                                >
                                     <img
                                         src={props.image_url}
                                         alt="image_description"
@@ -115,20 +115,20 @@ const Cards = (props) => {
                                     <div className="imageInfo">
                                         <h5>{props.subtitle}</h5>
                                         <p>{props.description}</p>
-                                        <div className="row dateEdit ">
-                                            <div className="col">
-                                                <h6>{props.cardDate}</h6>
-                                            </div>
-                                            <div className="col readAlign">
-                                                <Link to="/understanding-decentralised-finance/">
-                                                    Read More
-                                                    <i className="fa fa-angle-right"></i>
-                                                </Link>
-                                            </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col">
+                                            <h6>{props.cardDate}</h6>
+                                        </div>
+                                        <div className="col readAlign">
+                                            <Link to="/understanding-decentralised-finance/">
+                                                Read More
+                                                <i className="fa fa-angle-right"></i>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </>
                         ))}
                 </div>
             </div>
@@ -137,3 +137,16 @@ const Cards = (props) => {
 };
 
 export default Cards;
+{
+    /* <div className="row dateEdit ">
+                                            <div className="col-md-6">
+                                                <h6>{props.cardDate}</h6>
+                                            </div>
+                                            <div className="col-md-6 readAlign">
+                                                <Link to="/understanding-decentralised-finance/">
+                                                    Read More
+                                                    <i className="fa fa-angle-right"></i>
+                                                </Link>
+                                            </div>
+                                        </div> */
+}

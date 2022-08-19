@@ -26,6 +26,7 @@ ul {
 }
 .cardEdit {
     margin-top: 2.5rem;
+
 }
 .cardEdit img{
     height: 210px;
@@ -49,9 +50,9 @@ ul {
     cursor: pointer;
     font-size: 19px;
 }
-.cardEdit :hover{
+/* .cardEdit :hover{
     background-color: #fafafa;
-}
+} */
 .underDeco p a{
     text-decoration: none;
 }
@@ -59,6 +60,7 @@ ul {
     width: auto;
     left: 19rem;
 }
+
 .readAlign{
     font-weight: bold;
     margin-top: 0.8rem;
@@ -71,14 +73,14 @@ ul {
 }
 .readAlign a i{
     color: #4E5D78;
-    margin-left: 0.5rem;
+    margin-left: 0.3rem;
     font-weight: bold;
 }
-.dateEdit h6{
-    font-family: font-Medium;
-    margin-top: 1rem;
+.cardEdit h6{
+    font-family: font-Regular;
     font-size: 14px;
     color: #1e2329;
+    margin-top: 0.8rem;
 }
 .form-control{
     width: 30rem;
@@ -92,6 +94,10 @@ ul {
 }
 .form-control::placeholder{
     font-family: font-Regular;
+}
+.hoverChange :hover{
+    border-radius: 0.5rem;
+    background-color: #fafafa;
 }
 @media screen and (max-width: 573px){
     .searchEdit {

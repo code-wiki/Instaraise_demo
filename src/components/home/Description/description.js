@@ -10,11 +10,13 @@ const Description = () => {
                     {DESCDATA.map((props) => (
                         <>
                             <div className="col-md-6">
-                                <img
-                                    className="imageEdit"
-                                    src={props.descImage}
-                                    alt="descImage"
-                                />
+                                <Link to="/understanding-decentralised-finance/">
+                                    <img
+                                        className="imageEdit"
+                                        src={props.descImage}
+                                        alt="descImage"
+                                    />
+                                </Link>
                             </div>
                             <div className="col-md-6 featured-heading">
                                 <h5>{props.descHeading}</h5>
