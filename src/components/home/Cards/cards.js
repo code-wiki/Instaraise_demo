@@ -89,7 +89,16 @@ const Cards = (props) => {
                                         <h5>{props.subtitle}</h5>
                                         <p>{props.description}</p>
                                     </div>
-                                    <div className="row">
+                                    <div className="cardFooter">
+                                        <h6>{props.cardDate}</h6>
+                                        <div className="alignbtn">
+                                            <Link to="/understanding-decentralised-finance/">
+                                                Read More
+                                                <i className="fa fa-angle-right"></i>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    {/* <div className="row ">
                                         <div className="col">
                                             <h6>{props.cardDate}</h6>
                                         </div>
@@ -99,7 +108,7 @@ const Cards = (props) => {
                                                 <i className="fa fa-angle-right"></i>
                                             </Link>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </>
                         ))}

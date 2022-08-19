@@ -65,21 +65,23 @@ ul {
 .searchEdit {
     width: auto;
 }
-
-.readAlign{
-    font-weight: bold;
-    margin-top: 0.8rem;
+.alignbtn {
+    margin-top: 0.5rem;
 }
-.readAlign a{
+
+.alignbtn a{
     text-decoration: none;
     color: #4E5D78;
-    margin-left: 3rem;
     font-family: font-SemiBold;
 }
-.readAlign a i{
+.alignbtn a i{
     color: #4E5D78;
-    margin-left: 0.3rem;
+    margin-left: 0.5rem;
     font-weight: bold;
+}
+.cardFooter{
+    justify-content: space-between;
+    display: flex;
 }
 .cardEdit h6{
     font-family: font-Regular;
