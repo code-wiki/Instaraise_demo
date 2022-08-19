@@ -36,19 +36,21 @@ const BlogContent = () => {
                             <div class="sidebar-item sticky-top">
                                 <div class="sidebar-content">
                                     <h4>Related Posts</h4>
-                                    <div className="sidebarimg">
-                                        <img src={props.image_url} />
+                                    <div className="combineCard">
+                                        <div className="sidebarimg">
+                                            <img src={props.image_url} />
+                                        </div>
+                                        <div className="textSticky">
+                                            <p>{props.stickText}</p>
+                                        </div>
                                     </div>
-                                    <div className="textSticky">
-                                        <p>{props.stickText}</p>
-                                    </div>
-                                    <div className="sidebarimg">
-                                        <img src={props.image_url2} />
-                                    </div>
-                                    <div className="textSticky">
-                                        <p className="paraEdit">
-                                            {props.stickText}
-                                        </p>
+                                    <div className="combineCard">
+                                        <div className="sidebarimg">
+                                            <img src={props.image_url2} />
+                                        </div>
+                                        <div className="textSticky">
+                                            <p>{props.stickText}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

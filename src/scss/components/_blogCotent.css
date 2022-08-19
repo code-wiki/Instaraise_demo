@@ -25,10 +25,20 @@
 
   .sidebar-section {
     height: 100%;
-  }
 
+  }
+.combineCard{
+    cursor: pointer;
+    border-radius: 2rem;
+}
+/* .combineCard :hover{
+    background-color: red;
+} */
   .sidebar-content {
     padding: 1em;
+  }
+  .sidebar-content :hover{
+    background-color: #fafafa;
   }
   .sidebar-content h4{
     padding: 1em;
