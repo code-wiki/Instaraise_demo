@@ -98,17 +98,6 @@ const Cards = (props) => {
                                             </Link>
                                         </div>
                                     </div>
-                                    {/* <div className="row ">
-                                        <div className="col">
-                                            <h6>{props.cardDate}</h6>
-                                        </div>
-                                        <div className="col readAlign">
-                                            <Link to="/understanding-decentralised-finance/">
-                                                Read More
-                                                <i className="fa fa-angle-right"></i>
-                                            </Link>
-                                        </div>
-                                    </div> */}
                                 </div>
                             </>
                         ))}
