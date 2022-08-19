@@ -110,16 +110,3 @@ const Cards = (props) => {
 };
 
 export default Cards;
-{
-    /* <div className="row dateEdit ">
-                                            <div className="col-md-6">
-                                                <h6>{props.cardDate}</h6>
-                                            </div>
-                                            <div className="col-md-6 readAlign">
-                                                <Link to="/understanding-decentralised-finance/">
-                                                    Read More
-                                                    <i className="fa fa-angle-right"></i>
-                                                </Link>
-                                            </div>
-                                        </div> */
-}

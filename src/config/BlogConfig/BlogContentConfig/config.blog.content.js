@@ -3,6 +3,12 @@ export const BLOG_CONTENT_DATA = [
         BlogSubtitle: 'Understanding Decentralized Finance (DeFi) Evolution',
         BlogDate: '27 Jun, 2022',
         BlogImg: 'http://instaraise.rswebs.in/wp-content/uploads/2022/06/3.jpg',
+        image_url:
+            'https://blog.instaraise.io/wp-content/uploads/2022/06/multichain_2.jpg',
+        image_url2:
+            'http://instaraise.rswebs.in/wp-content/uploads/2022/07/A69DC2D2-D515-491D-A504-783EB8E74B61.jpeg',
+        stickText:
+            'Potential of Multichain in DeFi Ecosystem Instaraise Spaces Recap',
         BlogHeading:
             'DeFi, short for “Decentralized Finance” has been among the hottest topics in the past couple of years. In this post, we will discover the evolution of Decentralized finance and also explore what is hidden in the future for us.',
         BlogPara:
