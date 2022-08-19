@@ -86,8 +86,12 @@ const Cards = (props) => {
                                         alt="image_description"
                                     />
                                     <div className="imageInfo">
-                                        <h5>{props.subtitle}</h5>
-                                        <p>{props.description}</p>
+                                        <div className="item-title">
+                                            <h5>{props.subtitle}</h5>
+                                        </div>
+                                        <div className="item-desc">
+                                            <p>{props.description}</p>
+                                        </div>
                                     </div>
                                     <div className="cardFooter">
                                         <h6>{props.cardDate}</h6>
