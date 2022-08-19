@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../../scss/components/_cards.css';
+import { TABS_DATA } from '../../../config/HomeConfig/CardConfig/config.tabs';
 
 const Cards = (props) => {
     const [search, setSearch] = useState('');
@@ -15,20 +16,6 @@ const Cards = (props) => {
                             id="pills-tab"
                             role="tablist"
                         >
-                            <li className="nav-item active">
-                                <a
-                                    className="nav-link active"
-                                    id="pills-home-tab"
-                                    data-toggle="pill"
-                                    href="#pills-home"
-                                    role="tab"
-                                    aria-controls="pills-home"
-                                    aria-selected="true"
-                                    onClick={() => props.allItemData('All')}
-                                >
-                                    <span>All</span>
-                                </a>
-                            </li>
                             <li className="nav-item">
                                 <a
                                     class="nav-link"
@@ -38,47 +25,29 @@ const Cards = (props) => {
                                     role="tab"
                                     aria-controls="pills-profile"
                                     aria-selected="false"
-                                    onClick={() =>
-                                        props.filterItemData('DefiTools')
-                                    }
+                                    onClick={() => props.allItemData('All')}
                                 >
-                                    <span>Defi tools</span>
+                                    <span>All</span>
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a
-                                    className="nav-link"
-                                    id="pills-contact-tab"
-                                    data-toggle="pill"
-                                    href="#pills-contact"
-                                    role="tab"
-                                    aria-controls="pills-contact"
-                                    aria-selected="false"
-                                    onClick={() =>
-                                        props.filterItemData('DevUpdates')
-                                    }
-                                >
-                                    <span>Defi updates</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a
-                                    className="nav-link"
-                                    id="pills-contact-tab"
-                                    data-toggle="pill"
-                                    href="#pills-contact"
-                                    role="tab"
-                                    aria-controls="pills-contact"
-                                    aria-selected="false"
-                                    onClick={() =>
-                                        props.filterItemData(
-                                            'Product Exploration'
-                                        )
-                                    }
-                                >
-                                    <span>Product exploration</span>
-                                </a>
-                            </li>
+                            {TABS_DATA.map((val) => (
+                                <li className="nav-item active">
+                                    <a
+                                        className="nav-link"
+                                        id="pills-home-tab"
+                                        data-toggle="pill"
+                                        href="#pills-home"
+                                        role="tab"
+                                        aria-controls="pills-home"
+                                        aria-selected="true"
+                                        onClick={() =>
+                                            props.filterItemData(val.tabCateg)
+                                        }
+                                    >
+                                        <span>{val.tabName}</span>
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     <div className="input-group searchEdit">
