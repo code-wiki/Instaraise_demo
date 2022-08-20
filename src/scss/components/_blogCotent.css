@@ -34,10 +34,18 @@
 /* .combineCard :hover{
     background-color: red;
 } */
+  .sharedPost ul li{
+
+    display: inline-block;
+    margin: 1rem 3rem 0rem -1.5rem;
+  }
+  .sharedPost ul li i{
+    cursor: pointer;
+  }
   .sidebar-content {
     padding: 1em;
   }
-  .sidebar-content :hover{
+  .combineCard:hover{
     background-color: #fafafa;
   }
   .sidebar-content h4{

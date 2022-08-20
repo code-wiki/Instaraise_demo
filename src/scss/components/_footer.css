@@ -32,8 +32,16 @@
     font-family: font-Regular;
 }
 .footer-description-text p a {
+    text-decoration: none;
     font-family: font-Regular;
 }
 .footer-description-text{
+    line-height: 1rem;
+}
+.footer-description-text-social p a {
+    text-decoration: none;
+    font-family: font-Regular;
+}
+.footer-description-text-socail{
     line-height: 1rem;
 }

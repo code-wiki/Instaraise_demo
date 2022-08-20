@@ -9,7 +9,7 @@ const Footer = (props) => {
                 {FOOTER_DATA.map((val, index) => (
                     <div key={index}>
                         <div className="row">
-                            <div className="col-md-5 mt-3">
+                            <div className="col-md-4 mt-3">
                                 <div className="row">
                                     <div className="col-md-8">
                                         <h4 className="mb-4 footer-heading-text">
@@ -47,7 +47,7 @@ const Footer = (props) => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <div className="col-md-2 col-lg-3 col-xl-3 mx-auto mt-3">
                                 <h4 className="mb-4 footer-heading-text">
                                     {val.footerCategories}
                                 </h4>
@@ -87,7 +87,40 @@ const Footer = (props) => {
                                     </a>
                                 </p>
                             </div>
-                            <hr className="mb-4" />
+                            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h4 className="mb-4 footer-heading-text">
+                                    {val.footerSocialTopic}
+                                </h4>
+                                <div className="footer-description-text-social">
+                                    <p>
+                                        <i className="fa fa-twitter"></i>
+                                        <a
+                                            href="https://twitter.com/instaraise"
+                                            target="_blank"
+                                        >
+                                            {val.footerSocialTwitter}
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <i className="fa fa-globe"></i>
+                                        <a
+                                            href="https://instaraise.io/"
+                                            target="_blank"
+                                        >
+                                            {val.footerSocialInsta}
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <i className="fa fa-telegram"></i>
+                                        <a
+                                            href="https://t.me/instaraise"
+                                            target="_blank"
+                                        >
+                                            {val.footerSocialTele}
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="text-center social">

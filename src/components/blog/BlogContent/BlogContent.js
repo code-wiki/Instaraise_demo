@@ -20,37 +20,66 @@ const BlogContent = () => {
 
                             <p className="paraEdit">{props.BlogHeading}</p>
                             <p className="paraEdit">{props.BlogPara}</p>
-                            <p className="paraEdit">{props.BlogPara}</p>
-                            <p className="paraEdit">{props.BlogPara}</p>
-                            <p className="paraEdit">{props.BlogPara}</p>
-                            <p className="paraEdit">{props.BlogPara}</p>
-                            <p className="paraEdit">{props.BlogPara}</p>
-                            <p className="paraEdit">{props.BlogPara}</p>
                         </>
                     ))}
                 </div>
 
                 <div className="col-md-3">
                     {BLOG_CONTENT_DATA.map((props) => (
-                        <div class="sidebar-section">
-                            <div class="sidebar-item sticky-top">
-                                <div class="sidebar-content">
+                        <div class="sidebar-section ">
+                            <div class="sidebar-content sticky-top">
+                                <div className="sharedPost">
+                                    <h4>Share Posts</h4>
+                                    <ul className="d-flex">
+                                        <li>
+                                            <a
+                                                href="https://twitter.com/instaraise"
+                                                target="_blank"
+                                            >
+                                                <i className="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://twitter.com/instaraise"
+                                                target="_blank"
+                                            >
+                                                <i className="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://t.me/instaraise"
+                                                target="_blank"
+                                            >
+                                                <i className="fa fa-telegram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i className="fa fa-twitter"></i>
+                                        </li>
+                                        <li>
+                                            <i className="fa fa-twitter"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="sharedPost">
                                     <h4>Related Posts</h4>
-                                    <div className="combineCard">
-                                        <div className="sidebarimg">
-                                            <img src={props.image_url} />
-                                        </div>
-                                        <div className="textSticky">
-                                            <p>{props.stickText}</p>
-                                        </div>
+                                </div>
+                                <div className="combineCard">
+                                    <div className="sidebarimg">
+                                        <img src={props.image_url} />
                                     </div>
-                                    <div className="combineCard">
-                                        <div className="sidebarimg">
-                                            <img src={props.image_url2} />
-                                        </div>
-                                        <div className="textSticky">
-                                            <p>{props.stickText}</p>
-                                        </div>
+                                    <div className="textSticky">
+                                        <p>{props.stickText}</p>
+                                    </div>
+                                </div>
+                                <div className="combineCard">
+                                    <div className="sidebarimg">
+                                        <img src={props.image_url2} />
+                                    </div>
+                                    <div className="textSticky">
+                                        <p>{props.stickText}</p>
                                     </div>
                                 </div>
                             </div>

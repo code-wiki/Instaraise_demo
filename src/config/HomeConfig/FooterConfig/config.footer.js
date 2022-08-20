@@ -12,5 +12,9 @@ export const FOOTER_DATA = [
         footerUpd: 'Dev updates',
         footerProduct: 'Product exploration',
         footerCopyRight: '©COPYRIGHT - INSTARAISE - 2022',
+        footerSocialTopic: 'Connect with us',
+        footerSocialTwitter: 'twitter.com/insta',
+        footerSocialInsta: 'instaraise.io',
+        footerSocialTele: 't.me/instaraise',
     },
 ];
