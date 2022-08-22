@@ -18,7 +18,7 @@ const Cards = (props) => {
                         >
                             <li className="nav-item">
                                 <a
-                                    class="nav-link"
+                                    class="nav-link active"
                                     id="pills-profile-tab"
                                     data-toggle="pill"
                                     href="#pills-profile"

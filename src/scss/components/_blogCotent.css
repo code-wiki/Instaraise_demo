@@ -3,7 +3,7 @@
     color: #607D8B;
 }
 .ContentEdit img{
-    border-radius: 1rem;
+    border-radius: 0.7rem;
 }
 .ContentEdit{
     margin-top: 2rem;
@@ -48,8 +48,8 @@
   .combineCard:hover{
     background-color: #fafafa;
   }
-  .sidebar-content h4{
-    padding: 1em;
+  .postpadding{
+    margin-bottom: 2rem;
   }
   .sidebar-section {
     display: flex;

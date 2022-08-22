@@ -5,7 +5,7 @@ const BlogContent = () => {
     return (
         <div className="container">
             <div className="row mt-5 ContentEdit">
-                <div className="col-md-9">
+                <div className="col-md-8">
                     {BLOG_CONTENT_DATA.map((props) => (
                         <>
                             <h5>
@@ -24,7 +24,7 @@ const BlogContent = () => {
                     ))}
                 </div>
 
-                <div className="col-md-3">
+                <div className="col-md-4">
                     {BLOG_CONTENT_DATA.map((props) => (
                         <div class="sidebar-section ">
                             <div class="sidebar-content sticky-top">
@@ -64,7 +64,9 @@ const BlogContent = () => {
                                     </ul>
                                 </div>
                                 <div className="sharedPost">
-                                    <h4>Related Posts</h4>
+                                    <h4 className="postpadding">
+                                        Related Posts
+                                    </h4>
                                 </div>
                                 <div className="combineCard">
                                     <div className="sidebarimg">
