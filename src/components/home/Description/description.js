@@ -10,7 +10,7 @@ const Description = () => {
                     {DESCDATA.map((props) => (
                         <>
                             <div className="col-md-6">
-                                <Link to="/understanding-decentralised-finance/">
+                                <Link to={props.routesLink}>
                                     <img
                                         className="imageEdit"
                                         src={props.descImage}

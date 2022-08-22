@@ -16,20 +16,6 @@ const Cards = (props) => {
                             id="pills-tab"
                             role="tablist"
                         >
-                            <li className="nav-item">
-                                <a
-                                    class="nav-link active"
-                                    id="pills-profile-tab"
-                                    data-toggle="pill"
-                                    href="#pills-profile"
-                                    role="tab"
-                                    aria-controls="pills-profile"
-                                    aria-selected="false"
-                                    onClick={() => props.allItemData('All')}
-                                >
-                                    <span>All</span>
-                                </a>
-                            </li>
                             {TABS_DATA.map((val) => (
                                 <li className="nav-item active">
                                     <a
@@ -96,7 +82,7 @@ const Cards = (props) => {
                                     <div className="cardFooter">
                                         <h6>{props.cardDate}</h6>
                                         <div className="alignbtn">
-                                            <Link to="/understanding-decentralised-finance/">
+                                            <Link to={props.routesLink}>
                                                 Read More
                                                 <i className="fa fa-angle-right"></i>
                                             </Link>
@@ -112,3 +98,19 @@ const Cards = (props) => {
 };
 
 export default Cards;
+{
+    /* <li className="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    id="pills-profile-tab"
+                                    data-toggle="pill"
+                                    href="#pills-profile"
+                                    role="tab"
+                                    aria-controls="pills-profile"
+                                    aria-selected="false"
+                                    onClick={() => props.filterItemData('All')}
+                                >
+                                    <span>All</span>
+                                </a>
+                            </li> */
+}

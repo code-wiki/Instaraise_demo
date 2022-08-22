@@ -2,14 +2,14 @@ import React from 'react';
 import Footer from '../home/Footer/footer';
 import BlogHeader from './BlogHeader/BlogHeader';
 import BlogContent from './BlogContent/BlogContent';
-const IndexBlog = () => {
+const BlogComponent = (props) => {
     return (
         <>
-            <BlogHeader />
-            <BlogContent />
-            <Footer />
+            <BlogHeader {...props} />
+            <BlogContent {...props} />
+            <Footer {...props} />
         </>
     );
 };
 
-export default IndexBlog;
+export default BlogComponent;

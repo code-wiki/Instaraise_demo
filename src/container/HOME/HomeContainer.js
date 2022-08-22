@@ -15,7 +15,6 @@ const HomeContainer = (props) => {
 };
 const mapDispatchToProps = (dispatch) => ({
     filterItemData: (payload) => dispatch(filterItemData(payload)),
-    allItemData: (payload) => dispatch(allItemData(payload)),
 });
 const mapStateToProps = (state) => ({
     currentReducer: state.ReduxReducer,

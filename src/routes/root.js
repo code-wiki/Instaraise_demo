@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import HomeContainer from '../container/HOME/HomeContainer';
-import IndexBlog from '../components/blog/IndexBlog';
+import BlogContainer from '../container/BLOG/BlogContainer';
 const Root = () => {
     return (
         <>
@@ -11,7 +11,7 @@ const Root = () => {
                     <Route path="/" element={<HomeContainer />} />
                     <Route
                         path="/understanding-decentralised-finance/"
-                        element={<IndexBlog />}
+                        element={<BlogContainer />}
                     ></Route>
                     <Route
                         path="*"
