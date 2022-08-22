@@ -82,7 +82,7 @@ const Cards = (props) => {
                                     <div className="cardFooter">
                                         <h6>{props.cardDate}</h6>
                                         <div className="alignbtn">
-                                            <Link to={props.routesLink}>
+                                            <Link to={props.blogLink}>
                                                 Read More
                                                 <i className="fa fa-angle-right"></i>
                                             </Link>
