@@ -14,11 +14,13 @@ const BlogContent = () => {
                             <p>{props.BlogDate}</p>
                             <img
                                 src={props.BlogImg}
-                                class="img-fluid"
+                                className="img-fluid"
                                 alt="Responsive image"
                             ></img>
 
-                            <p className="paraEdit">{props.BlogHeading}</p>
+                            <p className="paraEdit">
+                                <em>{props.BlogHeading}</em>
+                            </p>
                             <p className="paraEdit">{props.BlogPara}</p>
                         </>
                     ))}

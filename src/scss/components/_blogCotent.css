@@ -15,7 +15,6 @@
     font-family: font-regular;
     color: #607d8b;
 }
-
 .content-section {
     background: lavender;
     height: 1000px;
@@ -64,4 +63,9 @@
   .textSticky{
     margin-top: 1rem;
     text-align: justify;
+  }
+  .paraEdit  em {
+    color: #607D8B;
+    font-family: font-SemiBold;
+    font-size: 15px;
   }
