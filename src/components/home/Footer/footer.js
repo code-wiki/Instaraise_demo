@@ -12,7 +12,7 @@ const Footer = (props) => {
                             <div className="col-md-4 mt-3">
                                 <div className="row">
                                     <div className="col-md-8">
-                                        <h4 className="mb-4 footer-heading-text">
+                                        <h4 className="mb-4 footer-heading-text txth4">
                                             {val.footerHeading}
                                         </h4>
                                         <p className="aboutHeading">
@@ -22,7 +22,7 @@ const Footer = (props) => {
                                 </div>
                             </div>
                             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                                <h4 className="mb-4 footer-heading-text">
+                                <h4 className="mb-4 footer-heading-text txth4">
                                     {val.footerNavigation}
                                 </h4>
                                 <div className="footer-description-text">
@@ -48,7 +48,7 @@ const Footer = (props) => {
                                 </div>
                             </div>
                             <div className="col-md-2 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h4 className="mb-4 footer-heading-text">
+                                <h4 className="mb-4 footer-heading-text txth4">
                                     {val.footerCategories}
                                 </h4>
                                 <p>
@@ -88,7 +88,7 @@ const Footer = (props) => {
                                 </p>
                             </div>
                             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                                <h4 className="mb-4 footer-heading-text">
+                                <h4 className="mb-4 footer-heading-text txth4">
                                     {val.footerSocialTopic}
                                 </h4>
                                 <div className="footer-description-text-social">

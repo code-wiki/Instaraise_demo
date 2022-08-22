@@ -9,6 +9,7 @@ export const BLOG_CONTENT_DATA = [
             'http://instaraise.rswebs.in/wp-content/uploads/2022/07/A69DC2D2-D515-491D-A504-783EB8E74B61.jpeg',
         stickText:
             'Potential of Multichain in DeFi Ecosystem Instaraise Spaces Recap',
+        stickText2: 'Instaraise IDO Recap and Roadmap',
         BlogHeading:
             'DeFi, short for “Decentralized Finance” has been among the hottest topics in the past couple of years. In this post, we will discover the evolution of Decentralized finance and also explore what is hidden in the future for us.',
         BlogPara:

@@ -58,10 +58,20 @@ const BlogContent = () => {
                                             </a>
                                         </li>
                                         <li>
-                                            <i className="fa fa-twitter"></i>
+                                            <a
+                                                href="https://www.reddit.com/r/Equilibrium_DeFi/comments/v8kz66/build_with_instaraise/"
+                                                target="_blank"
+                                            >
+                                                <i className="fa fa-reddit"></i>
+                                            </a>
                                         </li>
                                         <li>
-                                            <i className="fa fa-twitter"></i>
+                                            <a
+                                                href="https://www.reddit.com/r/Equilibrium_DeFi/comments/v8kz66/build_with_instaraise/"
+                                                target="_blank"
+                                            >
+                                                <i className="fa fa-reddit"></i>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -83,7 +93,7 @@ const BlogContent = () => {
                                         <img src={props.image_url2} />
                                     </div>
                                     <div className="textSticky">
-                                        <p>{props.stickText}</p>
+                                        <p>{props.stickText2}</p>
                                     </div>
                                 </div>
                             </div>

@@ -14,6 +14,7 @@
     line-height: 1.7rem;
     font-family: font-regular;
     color: #607d8b;
+    
 }
 .content-section {
     background: lavender;
@@ -33,6 +34,10 @@
 /* .combineCard :hover{
     background-color: red;
 } */
+.sharedPost h4{
+  font-family: font-SemiBold;
+    font-size: 1.2rem;
+}
   .sharedPost ul li{
 
     display: inline-block;
@@ -63,6 +68,10 @@
   .textSticky{
     margin-top: 1rem;
     text-align: justify;
+    line-height: 2rem;
+  }
+  .textSticky p {
+    font-family: font-Regular;
   }
   .paraEdit  em {
     color: #607D8B;
