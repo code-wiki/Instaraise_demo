@@ -1,6 +1,7 @@
 .ContentEdit p {
     text-align: justify;
     color: #607D8B;
+    font-family: font-regular;
 }
 .ContentEdit img{
     border-radius: 0.7rem;

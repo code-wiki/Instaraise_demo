@@ -11,7 +11,7 @@ const Footer = (props) => {
                         <div className="row">
                             <div className="col-md-4 mt-3">
                                 <div className="row">
-                                    <div className="col-md-8">
+                                    <div className="col-md-11">
                                         <h4 className="mb-4 footer-heading-text txth4">
                                             {val.footerHeading}
                                         </h4>
