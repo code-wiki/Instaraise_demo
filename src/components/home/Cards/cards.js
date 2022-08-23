@@ -16,8 +16,8 @@ const Cards = (props) => {
                             id="pills-tab"
                             role="tablist"
                         >
-                            {TABS_DATA.map((elem) => (
-                                <li className="nav-item">
+                            {TABS_DATA.map((elem, index) => (
+                                <li key={index} className="nav-item">
                                     <a
                                         className={
                                             elem.tabCateg === 'All'
@@ -29,9 +29,9 @@ const Cards = (props) => {
                                         role="tab"
                                         aria-controls="pills-home"
                                         aria-selected="true"
-                                        onClick={() =>
-                                            props.filterItemData(elem.tabCateg)
-                                        }
+                                        onClick={() => {
+                                            props.filterItemData(elem.tabCateg);
+                                        }}
                                     >
                                         <span>{elem.tabName}</span>
                                     </a>

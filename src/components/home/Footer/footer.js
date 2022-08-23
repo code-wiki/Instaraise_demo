@@ -55,9 +55,9 @@ const Footer = (props) => {
                                     <i className="fa fa-angle-right"></i>
                                     <a
                                         href="#"
-                                        onClick={() =>
-                                            props.filterItemData('DefiTools')
-                                        }
+                                        onClick={() => {
+                                            props.filterItemData('DefiTools');
+                                        }}
                                     >
                                         {val.footerDefi}
                                     </a>
