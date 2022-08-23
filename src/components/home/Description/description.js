@@ -7,8 +7,8 @@ const Description = () => {
         <section className="featured">
             <div className="container">
                 <div className="row">
-                    {DESCDATA.map((props) => (
-                        <>
+                    {DESCDATA.map((props, index) => (
+                        <React.Fragment key={index}>
                             <div className="col-md-6">
                                 <Link to={props.routesLink}>
                                     <img
@@ -28,7 +28,7 @@ const Description = () => {
                                     </Link>
                                 </div>
                             </div>
-                        </>
+                        </React.Fragment>
                     ))}
                 </div>
             </div>

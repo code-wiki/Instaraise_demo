@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Tabs from './tabs';
 import '../../../scss/components/_cards.css';
-import { TABS_DATA } from '../../../config/HomeConfig/CardConfig/config.tabs';
 
+import CardItems from './CardItems';
 const Cards = (props) => {
-    const [search, setSearch] = useState('');
     const items = props.CardReducer;
+    const [search, setSearch] = useState('');
     return (
         <>
             <div className="container mt-5">
@@ -16,27 +16,7 @@ const Cards = (props) => {
                             id="pills-tab"
                             role="tablist"
                         >
-                            {TABS_DATA.map((elem, index) => (
-                                <li key={index} className="nav-item">
-                                    <a
-                                        className={
-                                            elem.tabCateg === 'All'
-                                                ? 'nav-link active'
-                                                : 'nav-link'
-                                        }
-                                        id="pills-home-tab"
-                                        data-toggle="pill"
-                                        role="tab"
-                                        aria-controls="pills-home"
-                                        aria-selected="true"
-                                        onClick={() => {
-                                            props.filterItemData(elem.tabCateg);
-                                        }}
-                                    >
-                                        <span>{elem.tabName}</span>
-                                    </a>
-                                </li>
-                            ))}
+                            <Tabs {...props} />
                         </ul>
                     </div>
                     <div className="input-group searchEdit">
@@ -51,47 +31,11 @@ const Cards = (props) => {
                     </div>
                 </div>
                 <div className="row hoverChange">
-                    {items
-                        .filter((elem) => {
-                            if (search === '') {
-                                return props;
-                            } else if (
-                                elem.subtitle
-                                    .toLowerCase()
-                                    .includes(search.toLowerCase())
-                            ) {
-                                return elem;
-                            }
-                            return false;
-                        })
-                        .map((elem, index) => (
-                            <div
-                                key={index}
-                                className="col-md-4 py-3 py-sm-0 px-4 cardEdit"
-                            >
-                                <img
-                                    src={elem.image_url}
-                                    alt="image_description"
-                                />
-                                <div className="imageInfo">
-                                    <div className="item-title">
-                                        <h5>{elem.subtitle}</h5>
-                                    </div>
-                                    <div className="item-desc">
-                                        <p>{elem.description}</p>
-                                    </div>
-                                </div>
-                                <div className="cardFooter">
-                                    <h6>{elem.cardDate}</h6>
-                                    <div className="alignbtn">
-                                        <Link to={elem.blogLink}>
-                                            Read More
-                                            <i className="fa fa-angle-right"></i>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                    <CardItems
+                        search={search}
+                        setSearch={setSearch}
+                        {...props}
+                    />
                 </div>
             </div>
         </>

@@ -5,99 +5,101 @@ const BlogContent = (props) => {
     return (
         <div className="container">
             <div className="row mt-5 ContentEdit">
-                {items.map((props) => (
-                    <>
-                        <div className="col-md-8">
-                            <h5>
-                                <strong>{props.BlogSubtitle}</strong>
-                            </h5>
-                            <p>{props.BlogDate}</p>
-                            <img
-                                src={props.BlogImg}
-                                className="img-fluid"
-                                alt="Responsive image"
-                            ></img>
+                {/* {items.map((props, index) => ( */}
+                <React.Fragment>
+                    <div className="col-md-8">
+                        <h5>
+                            <strong>{props.BlogReducer.subtitle}</strong>
+                        </h5>
+                        <p>{props.BlogReducer.cardDate}</p>
+                        <img
+                            src={props.BlogReducer.image_url}
+                            className="img-fluid"
+                            alt="Responsive image"
+                        ></img>
 
-                            <p className="paraEdit">
-                                <em>{props.BlogHeading}</em>
-                            </p>
-                            <p className="paraEdit">{props.BlogPara}</p>
-                        </div>
+                        {/* <p className="paraEdit">
+                            <em>{props.BlogHeading}</em>
+                        </p> */}
+                        <p className="paraEdit">
+                            {props.BlogReducer.description}
+                        </p>
+                    </div>
 
-                        <div className="col-md-4">
-                            <div class="sidebar-section ">
-                                <div class="sidebar-content sticky-top">
-                                    <div className="sharedPost">
-                                        <h4>Share Posts</h4>
-                                        <ul className="d-flex">
-                                            <li>
-                                                <a
-                                                    href="https://twitter.com/instaraise"
-                                                    target="_blank"
-                                                >
-                                                    <i className="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="https://twitter.com/instaraise"
-                                                    target="_blank"
-                                                >
-                                                    <i className="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="https://t.me/instaraise"
-                                                    target="_blank"
-                                                >
-                                                    <i className="fa fa-telegram"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="https://www.reddit.com/r/Equilibrium_DeFi/comments/v8kz66/build_with_instaraise/"
-                                                    target="_blank"
-                                                >
-                                                    <i className="fa fa-reddit"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="https://www.reddit.com/r/Equilibrium_DeFi/comments/v8kz66/build_with_instaraise/"
-                                                    target="_blank"
-                                                >
-                                                    <i className="fa fa-reddit"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
+                    <div className="col-md-4">
+                        <div className="sidebar-section ">
+                            <div className="sidebar-content sticky-top">
+                                <div className="sharedPost">
+                                    <h4>Share Posts</h4>
+                                    <ul className="d-flex">
+                                        <li>
+                                            <a
+                                                href="https://twitter.com/instaraise"
+                                                target="_blank"
+                                            >
+                                                <i className="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://twitter.com/instaraise"
+                                                target="_blank"
+                                            >
+                                                <i className="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://t.me/instaraise"
+                                                target="_blank"
+                                            >
+                                                <i className="fa fa-telegram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://www.reddit.com/r/Equilibrium_DeFi/comments/v8kz66/build_with_instaraise/"
+                                                target="_blank"
+                                            >
+                                                <i className="fa fa-reddit"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://www.reddit.com/r/Equilibrium_DeFi/comments/v8kz66/build_with_instaraise/"
+                                                target="_blank"
+                                            >
+                                                <i className="fa fa-reddit"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="sharedPost">
+                                    <h4 className="postpadding">
+                                        Related Posts
+                                    </h4>
+                                </div>
+                                {/* <div className="combineCard">
+                                    <div className="sidebarimg">
+                                        <img src={props.image_url} />
                                     </div>
-                                    <div className="sharedPost">
-                                        <h4 className="postpadding">
-                                            Related Posts
-                                        </h4>
-                                    </div>
-                                    <div className="combineCard">
-                                        <div className="sidebarimg">
-                                            <img src={props.image_url} />
-                                        </div>
-                                        <div className="textSticky">
-                                            <p>{props.stickText}</p>
-                                        </div>
-                                    </div>
-                                    <div className="combineCard">
-                                        <div className="sidebarimg">
-                                            <img src={props.image_url2} />
-                                        </div>
-                                        <div className="textSticky">
-                                            <p>{props.stickText2}</p>
-                                        </div>
+                                    <div className="textSticky">
+                                        <p>{props.stickText}</p>
                                     </div>
                                 </div>
+                                <div className="combineCard">
+                                    <div className="sidebarimg">
+                                        <img src={props.image_url2} />
+                                    </div>
+                                    <div className="textSticky">
+                                        <p>{props.stickText2}</p>
+                                    </div>
+                                </div> */}
                             </div>
                         </div>
-                    </>
-                ))}
+                    </div>
+                </React.Fragment>
+                {/* ))} */}
             </div>
         </div>
     );

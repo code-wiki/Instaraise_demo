@@ -32,8 +32,8 @@ const Header = () => {
                         id="navbarSupportedContent"
                     >
                         <ul className="navbar-nav mx-auto">
-                            {HEADER_DATA.map((props) => (
-                                <li className="nav-item">
+                            {HEADER_DATA.map((props, index) => (
+                                <li key={index} className="nav-item">
                                     <a
                                         className="nav-link"
                                         href={props.externalLink}
@@ -44,7 +44,7 @@ const Header = () => {
                                             <svg
                                                 stroke="currentColor"
                                                 fill="currentColor"
-                                                stroke-width="0"
+                                                strokeWidth="0"
                                                 viewBox="0 0 24 24"
                                                 height="0.8em"
                                                 width="1em"
@@ -54,7 +54,9 @@ const Header = () => {
                                                 <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path>
                                             </svg>
                                         </p>{' '}
-                                        <span class="sr-only">(current)</span>
+                                        <span className="sr-only">
+                                            (current)
+                                        </span>
                                     </a>
                                 </li>
                             ))}

@@ -1,4 +1,4 @@
-import { FILTER_CARDS, DEFITOOL } from '../../actions/index.action';
+import { FILTER_CARDS } from '../../actions/index.action';
 import { CARD_DATA } from '../../../config/HomeConfig/CardConfig/config.card';
 
 const initialState = CARD_DATA;
