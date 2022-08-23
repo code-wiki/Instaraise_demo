@@ -17,12 +17,15 @@ const Cards = (props) => {
                             role="tablist"
                         >
                             {TABS_DATA.map((elem) => (
-                                <li className="nav-item active">
+                                <li className="nav-item">
                                     <a
-                                        className="nav-link"
+                                        className={
+                                            elem.tabCateg === 'All'
+                                                ? 'nav-link active'
+                                                : 'nav-link'
+                                        }
                                         id="pills-home-tab"
                                         data-toggle="pill"
-                                        href="#pills-home"
                                         role="tab"
                                         aria-controls="pills-home"
                                         aria-selected="true"
@@ -62,34 +65,32 @@ const Cards = (props) => {
                             return false;
                         })
                         .map((elem, index) => (
-                            <>
-                                <div
-                                    key={index}
-                                    className="col-md-4 py-3 py-sm-0 px-4 cardEdit"
-                                >
-                                    <img
-                                        src={elem.image_url}
-                                        alt="image_description"
-                                    />
-                                    <div className="imageInfo">
-                                        <div className="item-title">
-                                            <h5>{elem.subtitle}</h5>
-                                        </div>
-                                        <div className="item-desc">
-                                            <p>{elem.description}</p>
-                                        </div>
+                            <div
+                                key={index}
+                                className="col-md-4 py-3 py-sm-0 px-4 cardEdit"
+                            >
+                                <img
+                                    src={elem.image_url}
+                                    alt="image_description"
+                                />
+                                <div className="imageInfo">
+                                    <div className="item-title">
+                                        <h5>{elem.subtitle}</h5>
                                     </div>
-                                    <div className="cardFooter">
-                                        <h6>{elem.cardDate}</h6>
-                                        <div className="alignbtn">
-                                            <Link to={elem.blogLink}>
-                                                Read More
-                                                <i className="fa fa-angle-right"></i>
-                                            </Link>
-                                        </div>
+                                    <div className="item-desc">
+                                        <p>{elem.description}</p>
                                     </div>
                                 </div>
-                            </>
+                                <div className="cardFooter">
+                                    <h6>{elem.cardDate}</h6>
+                                    <div className="alignbtn">
+                                        <Link to={elem.blogLink}>
+                                            Read More
+                                            <i className="fa fa-angle-right"></i>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
                         ))}
                 </div>
             </div>
