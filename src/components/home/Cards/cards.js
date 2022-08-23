@@ -5,7 +5,7 @@ import { TABS_DATA } from '../../../config/HomeConfig/CardConfig/config.tabs';
 
 const Cards = (props) => {
     const [search, setSearch] = useState('');
-    const items = props.currentReducer;
+    const items = props.CardReducer;
     return (
         <>
             <div className="container mt-5">
@@ -16,7 +16,7 @@ const Cards = (props) => {
                             id="pills-tab"
                             role="tablist"
                         >
-                            {TABS_DATA.map((val) => (
+                            {TABS_DATA.map((elem) => (
                                 <li className="nav-item active">
                                     <a
                                         className="nav-link"
@@ -27,10 +27,10 @@ const Cards = (props) => {
                                         aria-controls="pills-home"
                                         aria-selected="true"
                                         onClick={() =>
-                                            props.filterItemData(val.tabCateg)
+                                            props.filterItemData(elem.tabCateg)
                                         }
                                     >
-                                        <span>{val.tabName}</span>
+                                        <span>{elem.tabName}</span>
                                     </a>
                                 </li>
                             ))}
@@ -49,40 +49,40 @@ const Cards = (props) => {
                 </div>
                 <div className="row hoverChange">
                     {items
-                        .filter((props) => {
+                        .filter((elem) => {
                             if (search === '') {
                                 return props;
                             } else if (
-                                props.subtitle
+                                elem.subtitle
                                     .toLowerCase()
                                     .includes(search.toLowerCase())
                             ) {
-                                return props;
+                                return elem;
                             }
                             return false;
                         })
-                        .map((props, index) => (
+                        .map((elem, index) => (
                             <>
                                 <div
                                     key={index}
                                     className="col-md-4 py-3 py-sm-0 px-4 cardEdit"
                                 >
                                     <img
-                                        src={props.image_url}
+                                        src={elem.image_url}
                                         alt="image_description"
                                     />
                                     <div className="imageInfo">
                                         <div className="item-title">
-                                            <h5>{props.subtitle}</h5>
+                                            <h5>{elem.subtitle}</h5>
                                         </div>
                                         <div className="item-desc">
-                                            <p>{props.description}</p>
+                                            <p>{elem.description}</p>
                                         </div>
                                     </div>
                                     <div className="cardFooter">
-                                        <h6>{props.cardDate}</h6>
+                                        <h6>{elem.cardDate}</h6>
                                         <div className="alignbtn">
-                                            <Link to={props.blogLink}>
+                                            <Link to={elem.blogLink}>
                                                 Read More
                                                 <i className="fa fa-angle-right"></i>
                                             </Link>

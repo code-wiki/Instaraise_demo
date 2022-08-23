@@ -14,7 +14,7 @@ const mapDispatchToProps = (dispatch) => ({
     filterItemData: (payload) => dispatch(filterItemData(payload)),
 });
 const mapStateToProps = (state) => ({
-    currentReducer: state.ReduxReducer,
+    CardReducer: state.CardReducer,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer);
