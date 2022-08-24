@@ -56,6 +56,9 @@ const Footer = (props) => {
                                     <a
                                         href="#"
                                         onClick={() => {
+                                            props.handleCategoryChange(
+                                                'DefiTools'
+                                            );
                                             props.filterItemData('DefiTools');
                                         }}
                                     >
@@ -66,9 +69,12 @@ const Footer = (props) => {
                                     <i className="fa fa-angle-right"></i>
                                     <a
                                         href="#"
-                                        onClick={() =>
-                                            props.filterItemData('DevUpdates')
-                                        }
+                                        onClick={() => {
+                                            props.handleCategoryChange(
+                                                'DevUpdates'
+                                            );
+                                            props.filterItemData('DevUpdates');
+                                        }}
                                     >
                                         {val.footerUpd}
                                     </a>
@@ -77,11 +83,14 @@ const Footer = (props) => {
                                     <i className="fa fa-angle-right"></i>
                                     <a
                                         href="#"
-                                        onClick={() =>
+                                        onClick={() => {
+                                            props.handleCategoryChange(
+                                                'Product Exploration'
+                                            );
                                             props.filterItemData(
                                                 'Product Exploration'
-                                            )
-                                        }
+                                            );
+                                        }}
                                     >
                                         {val.footerProduct}
                                     </a>
