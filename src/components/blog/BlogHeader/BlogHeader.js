@@ -1,5 +1,4 @@
 import React from 'react';
-import { HEADER_DATA } from '../../../config/HomeConfig/HeaderConfig/config.header';
 import { BLOG_HEADER_DATA } from '../../../config/BlogConfig/BlogHeaderConfig/config.blog.header';
 import { Link } from 'react-router-dom';
 import '../../../scss/components/_header.css';
