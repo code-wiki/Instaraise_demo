@@ -4,7 +4,7 @@ import '../../../scss/components/_cards.css';
 
 import CardItems from './CardItems';
 const Cards = (props) => {
-    const items = props.CardReducer;
+    // const items = props.CardReducer;
     const [search, setSearch] = useState('');
     return (
         <>

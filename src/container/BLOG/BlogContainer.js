@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import BlogComponent from '../../components/blog/BlogComponent';
-import { handleSelectedCardAction } from '../../redux/actions/BlogAction/index.blog';
 const BlogContainer = (props) => {
     return (
         <>
@@ -9,11 +8,8 @@ const BlogContainer = (props) => {
         </>
     );
 };
-const mapDispatchToProps = (dispatch) => ({
-    handleSelectedCardAction: (payload) =>
-        dispatch(handleSelectedCardAction(payload)),
-});
+//we removed the dispatch action
 const mapStateToProps = (state) => ({
     BlogReducer: state.BlogReducer,
 });
-export default connect(mapStateToProps, mapDispatchToProps)(BlogContainer);
+export default connect(mapStateToProps)(BlogContainer);

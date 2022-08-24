@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const CardItems = (props) => {
@@ -34,16 +34,7 @@ const CardItems = (props) => {
                         <h6>{elem.cardDate}</h6>
                         <div className="alignbtn">
                             <NavLink
-                                // onClick={() => {
-                                //     props.handleSelectedCardAction({
-                                //         ...elem,
-                                //     });
-                                //     props.handleNextItems({
-                                //         ...elem,
-                                //     });
-                                // }}
                                 onClick={() => {
-                                    // e.preventDefault();
                                     props.handleSelectedCardAction({ ...elem });
                                 }}
                                 to={elem.blogLink}
