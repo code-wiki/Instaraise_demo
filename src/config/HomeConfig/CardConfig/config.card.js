@@ -3,10 +3,6 @@ export const CARD_DATA = [
         id: 1,
         image_url:
             'https://blog.instaraise.io/wp-content/uploads/2022/06/3.jpg',
-        image_url2:
-            'https://blog.instaraise.io/wp-content/uploads/2022/06/multichain_2.jpg',
-        image_url3:
-            'https://blog.instaraise.io/wp-content/uploads/2021/12/token-sale-recap.jpg',
         subtitle: 'Understanding Decentralized Finance (DeFi) Evolution',
         category: ['DefiTools', 'All'],
         descHeader:

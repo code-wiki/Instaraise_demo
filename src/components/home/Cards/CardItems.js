@@ -35,24 +35,7 @@ const CardItems = (props) => {
                             <NavLink
                                 onClick={() => {
                                     props.handleSelectedCardAction({ ...elem });
-                                    // props.handleNextItems([
-                                    //     props.CardReducer[
-                                    //         index ===
-                                    //         props.CardReducer.length - 1
-                                    //             ? props.CardReducer.length -
-                                    //               index +
-                                    //               1
-                                    //             : index + 1
-                                    //     ],
-                                    //     props.CardReducer[
-                                    //         index ===
-                                    //         props.CardReducer.length - 1
-                                    //             ? props.CardReducer.length -
-                                    //               index +
-                                    //               2
-                                    //             : index + 2
-                                    //     ],
-                                    // ]);
+                                    props.handleRelatedPosts(elem.id);
                                 }}
                                 to={elem.blogLink}
                             >

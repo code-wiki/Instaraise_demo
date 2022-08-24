@@ -2,7 +2,6 @@ import React from 'react';
 import '../../../scss/components/_blogCotent.css';
 import BlogSocial from './BlogSocial';
 const BlogContent = (props) => {
-    // const items = props.BlogReducer;
     return (
         <div className="container">
             <div className="row mt-5 ContentEdit">
@@ -45,26 +44,36 @@ const BlogContent = (props) => {
                                 <div className="combineCard">
                                     <div className="sidebarimg">
                                         <img
-                                            src={props.BlogReducer.image_url2}
+                                            src={
+                                                props.relatedBlogReducer[0]
+                                                    .image_url
+                                            }
                                         />
                                     </div>
                                     <div className="textSticky">
                                         <p>
-                                            Potential of Multichain in DeFi
-                                            Ecosystem- Instaraise Spaces Recap
+                                            {
+                                                props.relatedBlogReducer[0]
+                                                    .subtitle
+                                            }
                                         </p>
                                     </div>
                                 </div>
                                 <div className="combineCard">
                                     <div className="sidebarimg">
                                         <img
-                                            src={props.BlogReducer.image_url3}
+                                            src={
+                                                props.relatedBlogReducer[1]
+                                                    .image_url
+                                            }
                                         />
                                     </div>
                                     <div className="textSticky">
                                         <p>
-                                            Potential of Multichain in DeFi
-                                            Ecosystem- Instaraise Spaces Recap
+                                            {
+                                                props.relatedBlogReducer[1]
+                                                    .subtitle
+                                            }
                                         </p>
                                     </div>
                                 </div>
