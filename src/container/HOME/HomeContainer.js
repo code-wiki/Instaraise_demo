@@ -5,7 +5,7 @@ import {
     filterItemData,
     handleCategoryChange,
 } from '../../redux/actions/HomeActions/action.home';
-import { handleSelectedCardAction } from '../../redux/actions/BlogAction/index.blog';
+import { handleSelectedCardAction } from '../../redux/actions/BlogAction/action.blog';
 const HomeContainer = (props) => {
     return (
         <>
