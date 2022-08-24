@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../scss/components/_blogCotent.css';
 import BlogSocial from './BlogSocial';
+import RelatedPosts from '../RelatedPosts';
 const BlogContent = (props) => {
     // const items = props.BlogReducer;
     return (
@@ -37,37 +38,9 @@ const BlogContent = (props) => {
                                     <h4>Share Posts</h4>
                                     <BlogSocial />
                                 </div>
-                                <div className="sharedPost">
-                                    <h4 className="postpadding">
-                                        Related Posts
-                                    </h4>
-                                </div>
-                                <div className="combineCard">
-                                    <div className="sidebarimg">
-                                        <img
-                                            src={props.BlogReducer.image_url2}
-                                        />
-                                    </div>
-                                    <div className="textSticky">
-                                        <p>
-                                            Potential of Multichain in DeFi
-                                            Ecosystem- Instaraise Spaces Recap
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="combineCard">
-                                    <div className="sidebarimg">
-                                        <img
-                                            src={props.BlogReducer.image_url3}
-                                        />
-                                    </div>
-                                    <div className="textSticky">
-                                        <p>
-                                            Potential of Multichain in DeFi
-                                            Ecosystem- Instaraise Spaces Recap
-                                        </p>
-                                    </div>
-                                </div>
+                                <RelatedPosts
+                                    currentPageId={props.BlogReducer.id}
+                                />
                             </div>
                         </div>
                     </div>
