@@ -24,6 +24,10 @@ const BlogContent = (props) => {
                         <p className="paraEdit">
                             {props.BlogReducer.description}
                         </p>
+                        <p className="paraEdit">{props.BlogReducer.descPara}</p>
+                        <p className="paraEdit">
+                            {props.BlogReducer.descPara2}
+                        </p>
                     </div>
 
                     <div className="col-md-4">
