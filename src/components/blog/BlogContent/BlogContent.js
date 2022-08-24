@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../../scss/components/_blogCotent.css';
+import BlogSocial from './BlogSocial';
 const BlogContent = (props) => {
-    const items = props.BlogReducer;
+    // const items = props.BlogReducer;
     return (
         <div className="container">
             <div className="row mt-5 ContentEdit">
-                {/* {items.map((props, index) => ( */}
                 <React.Fragment>
                     <div className="col-md-8">
                         <h5>
@@ -31,48 +31,7 @@ const BlogContent = (props) => {
                             <div className="sidebar-content sticky-top">
                                 <div className="sharedPost">
                                     <h4>Share Posts</h4>
-                                    <ul className="d-flex">
-                                        <li>
-                                            <a
-                                                href="https://twitter.com/instaraise"
-                                                target="_blank"
-                                            >
-                                                <i className="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="https://twitter.com/instaraise"
-                                                target="_blank"
-                                            >
-                                                <i className="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="https://t.me/instaraise"
-                                                target="_blank"
-                                            >
-                                                <i className="fa fa-telegram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="https://www.reddit.com/r/Equilibrium_DeFi/comments/v8kz66/build_with_instaraise/"
-                                                target="_blank"
-                                            >
-                                                <i className="fa fa-reddit"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="https://www.reddit.com/r/Equilibrium_DeFi/comments/v8kz66/build_with_instaraise/"
-                                                target="_blank"
-                                            >
-                                                <i className="fa fa-reddit"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <BlogSocial />
                                 </div>
                                 <div className="sharedPost">
                                     <h4 className="postpadding">
@@ -99,7 +58,6 @@ const BlogContent = (props) => {
                         </div>
                     </div>
                 </React.Fragment>
-                {/* ))} */}
             </div>
         </div>
     );
