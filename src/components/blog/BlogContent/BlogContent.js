@@ -49,7 +49,10 @@ const BlogContent = (props) => {
                                         />
                                     </div>
                                     <div className="textSticky">
-                                        <p>Hello</p>
+                                        <p>
+                                            Potential of Multichain in DeFi
+                                            Ecosystem- Instaraise Spaces Recap
+                                        </p>
                                     </div>
                                 </div>
                                 <div className="combineCard">
@@ -59,7 +62,10 @@ const BlogContent = (props) => {
                                         />
                                     </div>
                                     <div className="textSticky">
-                                        <p>Hello</p>
+                                        <p>
+                                            Potential of Multichain in DeFi
+                                            Ecosystem- Instaraise Spaces Recap
+                                        </p>
                                     </div>
                                 </div>
                             </div>
