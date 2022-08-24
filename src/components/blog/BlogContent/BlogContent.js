@@ -18,9 +18,9 @@ const BlogContent = (props) => {
                             alt="Responsive image"
                         ></img>
 
-                        {/* <p className="paraEdit">
-                            <em>{props.BlogHeading}</em>
-                        </p> */}
+                        <p className="paraEdit">
+                            <em>{props.BlogReducer.descHeader}</em>
+                        </p>
                         <p className="paraEdit">
                             {props.BlogReducer.description}
                         </p>
@@ -38,22 +38,26 @@ const BlogContent = (props) => {
                                         Related Posts
                                     </h4>
                                 </div>
-                                {/* <div className="combineCard">
+                                <div className="combineCard">
                                     <div className="sidebarimg">
-                                        <img src={props.image_url} />
+                                        <img
+                                            src={props.BlogReducer.image_url2}
+                                        />
                                     </div>
                                     <div className="textSticky">
-                                        <p>{props.stickText}</p>
+                                        <p>Hello</p>
                                     </div>
                                 </div>
                                 <div className="combineCard">
                                     <div className="sidebarimg">
-                                        <img src={props.image_url2} />
+                                        <img
+                                            src={props.BlogReducer.image_url3}
+                                        />
                                     </div>
                                     <div className="textSticky">
-                                        <p>{props.stickText2}</p>
+                                        <p>Hello</p>
                                     </div>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </div>

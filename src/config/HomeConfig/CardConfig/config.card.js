@@ -3,8 +3,14 @@ export const CARD_DATA = [
         id: 1,
         image_url:
             'https://blog.instaraise.io/wp-content/uploads/2022/06/3.jpg',
+        image_url2:
+            'https://blog.instaraise.io/wp-content/uploads/2022/06/multichain_2.jpg',
+        image_url3:
+            'https://blog.instaraise.io/wp-content/uploads/2021/12/token-sale-recap.jpg',
         subtitle: 'Understanding Decentralized Finance (DeFi) Evolution',
         category: ['DefiTools', 'All'],
+        descHeader:
+            'DeFi, short for “Decentralized Finance” has been among the hottest topics in the past couple of years. In this post, we will discover the evolution of Decentralized finance and also explore what is hidden in the future for us.',
         description:
             'Decentralized finance (DeFi) is an emerging financial technology based on secure distributed ledgers similar to those used by cryptocurrencies. The system removes the control banks and institutions have on money, financial products, and financial services.',
         cardDate: '27 June, 2022',
