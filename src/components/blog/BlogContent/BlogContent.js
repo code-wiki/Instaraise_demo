@@ -1,9 +1,7 @@
 import React from 'react';
 import '../../../scss/components/_blogCotent.css';
 import BlogSocial from './BlogSocial';
-import RelatedPosts from '../RelatedPosts';
 const BlogContent = (props) => {
-    // const items = props.BlogReducer;
     return (
         <div className="container">
             <div className="row mt-5 ContentEdit">
@@ -38,9 +36,47 @@ const BlogContent = (props) => {
                                     <h4>Share Posts</h4>
                                     <BlogSocial />
                                 </div>
-                                <RelatedPosts
-                                    currentPageId={props.BlogReducer.id}
-                                />
+                                <div className="sharedPost">
+                                    <h4 className="postpadding">
+                                        Related Posts
+                                    </h4>
+                                </div>
+                                <div className="combineCard">
+                                    <div className="sidebarimg">
+                                        <img
+                                            src={
+                                                props.relatedBlogReducer[0]
+                                                    .image_url
+                                            }
+                                        />
+                                    </div>
+                                    <div className="textSticky">
+                                        <p>
+                                            {
+                                                props.relatedBlogReducer[0]
+                                                    .subtitle
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="combineCard">
+                                    <div className="sidebarimg">
+                                        <img
+                                            src={
+                                                props.relatedBlogReducer[1]
+                                                    .image_url
+                                            }
+                                        />
+                                    </div>
+                                    <div className="textSticky">
+                                        <p>
+                                            {
+                                                props.relatedBlogReducer[1]
+                                                    .subtitle
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

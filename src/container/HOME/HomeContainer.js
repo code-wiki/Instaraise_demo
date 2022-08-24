@@ -6,6 +6,7 @@ import {
     handleCategoryChange,
 } from '../../redux/actions/HomeActions/action.home';
 import { handleSelectedCardAction } from '../../redux/actions/BlogAction/action.blog';
+import { handleRelatedPosts } from '../../redux/actions/BlogAction/action.blog';
 const HomeContainer = (props) => {
     return (
         <>
@@ -18,6 +19,7 @@ const mapDispatchToProps = (dispatch) => ({
     handleSelectedCardAction: (payload) =>
         dispatch(handleSelectedCardAction(payload)),
     handleCategoryChange: (payload) => dispatch(handleCategoryChange(payload)),
+    handleRelatedPosts: (payload) => dispatch(handleRelatedPosts(payload)),
 });
 const mapStateToProps = (state) => ({
     CardReducer: state.CardReducer,
