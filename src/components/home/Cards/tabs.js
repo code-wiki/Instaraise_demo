@@ -7,7 +7,7 @@ const Tabs = (props) => {
                 <li key={index} className="nav-item">
                     <a
                         className={
-                            elem.tabCateg === 'All'
+                            props.TabsSelectReducer === elem.tabCateg
                                 ? 'nav-link active'
                                 : 'nav-link'
                         }
@@ -16,7 +16,10 @@ const Tabs = (props) => {
                         role="tab"
                         aria-controls="pills-home"
                         aria-selected="true"
-                        onClick={() => props.filterItemData(elem.tabCateg)}
+                        onClick={() => {
+                            props.handleCategoryChange(elem.tabCateg);
+                            props.filterItemData(elem.tabCateg);
+                        }}
                     >
                         <span>{elem.tabName}</span>
                     </a>
