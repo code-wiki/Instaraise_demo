@@ -9,7 +9,7 @@ export const BlogReducer = (state = initialState, action) => {
         default:
             if (SELECTED_BLOG_DETAILS != '/') {
                 const BlogDetails = CARD_DATA.filter(
-                    (elem) => elem.blogLink === window.location.pathname
+                    (elem) => elem.blogLink === SELECTED_BLOG_DETAILS
                 );
                 return BlogDetails[0];
             } else {

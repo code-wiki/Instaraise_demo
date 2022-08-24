@@ -10,7 +10,6 @@ export const filterItemData = (data) => {
     };
 };
 export const handleCategoryChange = (data) => {
-    console.log(data);
     return {
         type: TABS_SELECT,
         payload: data,
