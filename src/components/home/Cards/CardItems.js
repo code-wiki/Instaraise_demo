@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const CardItems = (props) => {
-    console.log(props);
     return (
         <>
             {props.CardReducer.filter((elem) => {
