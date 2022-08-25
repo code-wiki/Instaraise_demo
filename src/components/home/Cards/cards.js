@@ -4,7 +4,6 @@ import '../../../scss/components/_cards.css';
 
 import CardItems from './CardItems';
 const Cards = (props) => {
-    // const items = props.CardReducer;
     const [search, setSearch] = useState('');
     return (
         <>
@@ -43,19 +42,3 @@ const Cards = (props) => {
 };
 
 export default Cards;
-{
-    /* <li className="nav-item">
-                                <a
-                                    class="nav-link active"
-                                    id="pills-profile-tab"
-                                    data-toggle="pill"
-                                    href="#pills-profile"
-                                    role="tab"
-                                    aria-controls="pills-profile"
-                                    aria-selected="false"
-                                    onClick={() => props.filterItemData('All')}
-                                >
-                                    <span>All</span>
-                                </a>
-                            </li> */
-}

@@ -25,6 +25,23 @@ export const relatedBlogReducer = (state = [], action) => {
         case RELATED_POSTS:
             return action.payload;
         default:
-            return state;
+            if (SELECTED_BLOG_URL != '/') {
+                const BlogDetails = CARD_DATA.filter(
+                    (elem) => elem.blogLink === SELECTED_BLOG_URL
+                );
+                return relatedFilter(BlogDetails[0].id, CARD_DATA.length);
+            } else {
+                return state;
+            }
     }
+};
+const relatedFilter = (data, totalLength) => {
+    if (data === totalLength) {
+        return [CARD_DATA[0], CARD_DATA[1]];
+    } else if (data === totalLength - 1) {
+        return [CARD_DATA[data], CARD_DATA[0]];
+    }
+    return CARD_DATA.filter(
+        (item) => item.id === data + 1 || item.id === data + 2
+    );
 };
