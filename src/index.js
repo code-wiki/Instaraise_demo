@@ -13,3 +13,8 @@ root.render(
         </Provider>
     </React.StrictMode>
 );
+
+/*
+const root = document.getElementById('root');
+root.innerHTML = "<Root />"
+*/

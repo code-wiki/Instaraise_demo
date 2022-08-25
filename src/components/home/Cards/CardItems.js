@@ -36,6 +36,7 @@ const CardItems = (props) => {
                                 onClick={() => {
                                     props.handleSelectedCardAction({ ...elem });
                                     props.handleRelatedPosts(elem.id);
+                                    // console.log(elem.category[0]);
                                 }}
                                 to={elem.blogLink}
                             >
