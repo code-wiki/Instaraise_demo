@@ -42,9 +42,25 @@ const RelatedPostsBlog = (props) => {
                         </div>
                         <div className="combineCard">
                             <div className="sidebarimg">
-                                <img
-                                    src={props.relatedBlogReducer[1].image_url}
-                                />
+                                <NavLink
+                                    onClick={() => {
+                                        // debugger;
+                                        props.handleSelectedCardAction({
+                                            ...props.relatedBlogReducer[1],
+                                        });
+                                        props.handleRelatedPosts({
+                                            ...props.relatedBlogReducer[1],
+                                        });
+                                    }}
+                                    to={props.relatedBlogReducer[1].blogLink}
+                                >
+                                    <img
+                                        src={
+                                            props.relatedBlogReducer[1]
+                                                .image_url
+                                        }
+                                    />
+                                </NavLink>
                             </div>
                             <div className="textSticky">
                                 <p>{props.relatedBlogReducer[1].subtitle}</p>
