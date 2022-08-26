@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { HEADER_DATA } from '../../../config/HomeConfig/HeaderConfig/config.header';
 const HeaderData = () => {
     return (
@@ -7,15 +7,13 @@ const HeaderData = () => {
             <header className="site-header">
                 <nav className="container navbar navbar-expand-lg navbar-light">
                     <div className="branding">
-                        <Link to="/">
-                            <a className="navbar-brand d-flex">
-                                <img
-                                    src="http://instaraise.rswebs.in/wp-content/uploads/2022/07/logo-2.png"
-                                    alt="Instaraise logo"
-                                />
-                                <h5 className="compName mt-1">Instaraise</h5>
-                            </a>
-                        </Link>
+                        <NavLink className="navbar-brand d-flex" to="/">
+                            <img
+                                src="http://instaraise.rswebs.in/wp-content/uploads/2022/07/logo-2.png"
+                                alt="Instaraise logo"
+                            />
+                            <h5 className="compName mt-1">Instaraise</h5>
+                        </NavLink>
                     </div>
                     <button
                         className="navbar-toggler"
