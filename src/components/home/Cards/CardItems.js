@@ -43,7 +43,9 @@ const CardItems = (props) => {
                             <NavLink
                                 onClick={() => {
                                     props.handleSelectedCardAction({ ...elem });
-                                    props.handleRelatedPosts({ ...elem });
+                                    props.handleRelatedPosts({
+                                        ...elem,
+                                    });
                                 }}
                                 to={elem.blogLink}
                             >
