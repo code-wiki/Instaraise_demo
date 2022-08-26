@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { DESCDATA } from '../../../config/HomeConfig/DescriptionConfig/config.desc';
 import '../../../scss/components/_description.css';
 const Description = (props) => {
-    // console.log({ ...props.CardReducer[0] });
     return (
         <section className="featured">
             <div className="container">
