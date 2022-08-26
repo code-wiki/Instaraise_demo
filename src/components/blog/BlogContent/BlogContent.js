@@ -2,6 +2,7 @@ import React from 'react';
 import '../../../scss/components/_blogCotent.css';
 import BlogSocial from './BlogSocial';
 const BlogContent = (props) => {
+    console.log(props.relatedBlogReducer);
     return (
         <div className="container">
             <div className="row mt-5 ContentEdit">

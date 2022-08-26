@@ -5,7 +5,7 @@ import HomeContainer from '../container/HOME/HomeContainer';
 import BlogContainer from '../container/BLOG/BlogContainer';
 import { CARD_DATA } from '../config/HomeConfig/CardConfig/config.card';
 
-const Root = () => {
+const Root = (props) => {
     const DETAILS_PAGE_ROUTE = CARD_DATA.map((elem) => (
         <Route
             key={elem.id}

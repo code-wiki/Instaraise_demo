@@ -20,7 +20,15 @@ const CardItems = (props) => {
                     key={index}
                     className="col-md-4 py-3 py-sm-0 px-4 cardEdit"
                 >
-                    <img src={elem.image_url} alt="image_description" />
+                    <NavLink
+                        onClick={() => {
+                            props.handleSelectedCardAction({ ...elem });
+                            props.handleRelatedPosts({ ...elem });
+                        }}
+                        to={elem.blogLink}
+                    >
+                        <img src={elem.image_url} alt="image_description" />
+                    </NavLink>
                     <div className="imageInfo">
                         <div className="item-title">
                             <h5>{elem.subtitle}</h5>
@@ -35,8 +43,7 @@ const CardItems = (props) => {
                             <NavLink
                                 onClick={() => {
                                     props.handleSelectedCardAction({ ...elem });
-                                    props.handleRelatedPosts(elem.id);
-                                    // console.log(elem.category[0]);
+                                    props.handleRelatedPosts({ ...elem });
                                 }}
                                 to={elem.blogLink}
                             >
