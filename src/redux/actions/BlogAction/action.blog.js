@@ -7,8 +7,8 @@ export const handleSelectedCardAction = (data) => {
     };
 };
 export const handleRelatedPosts = (data) => {
-    console.log(data);
-    const relatedPostsFilter = nextTwoElements(data, CARD_DATA.length);
+    console.log(data.category);
+    const relatedPostsFilter = nextTwoElements(data.id, CARD_DATA.length);
     return {
         type: RELATED_POSTS,
         payload: relatedPostsFilter,
