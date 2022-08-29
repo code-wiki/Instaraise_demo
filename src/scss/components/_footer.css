@@ -3,12 +3,29 @@
     font-size: 16px;
     color: #4E5D78;
 }
+.dark .footerdark {
+    background: #0b0E11;
+}
+.light .footerdark {
+    background-color: #fafafa;
+}
+.dark .aboutHeading{
+    font-size: 13px;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: #FFFFFF;
+    font-family: font-Regular;
+}
 .aboutHeading{
     font-size: 13px;
     line-height: 1.5rem;
     text-align: justify;
     color: #607d8b;
     font-family: font-Regular;
+}
+.dark .social{
+    color: #FFFFFF;
+    font-size: 12px;
 }
 .social{
     color: #607d8b;
@@ -17,8 +34,15 @@
 .social hr{
     border-top: 0.1px solid #8995ab;
 }
+.dark .container p a{
+    color: #FFFFFF;
+}
 .container p a{
     color: #607d8b;
+}
+.dark .container p i{
+    color: #FFFFFF;
+    margin-right: 1rem;
 }
 .container p i{
     color: #607d8b;
@@ -27,6 +51,10 @@
 .txth4{
     font-weight: bold;
     font-size: 15px;
+}
+.dark .footer-heading-text{
+    color: #FFFFFF;
+    font-family: font-Regular;
 }
 .footer-heading-text{
     font-family: font-Regular;

@@ -16,10 +16,7 @@ const CardItems = (props) => {
                 }
                 return false;
             }).map((elem, index) => (
-                <div
-                    key={index}
-                    className="col-md-4 py-3 py-sm-0 px-4 cardEdit"
-                >
+                <div key={index} className="col-md-4 cardEdit">
                     <NavLink
                         onClick={() => {
                             props.handleSelectedCardAction({ ...elem });

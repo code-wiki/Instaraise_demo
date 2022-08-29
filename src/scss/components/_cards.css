@@ -4,6 +4,9 @@
     top: 5px;
     z-index: 999;
 } */
+.dark .featured-cards{
+    background: #181a20;
+}
 .nav-item a span{
     font-family: font-Medium;
 }
@@ -25,8 +28,9 @@ ul {
     list-style-type: none;
 }
 .cardEdit {
-    margin-top: 2.5rem;
-
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: .3s;
 }
 .cardEdit img{
     height: 210px;
@@ -48,8 +52,28 @@ ul {
     text-align: justify;
     font-size: 14px;
     margin-top: 1rem;
+    color: #b0b2b5;
+
+}
+.imageInfo p{
+    display: -webkit-box;
+    word-break: break-word;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-family: font-Regular;
+    line-height: 1.5rem;
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 1rem;
     color: #607d8b;
 
+}
+.dark .imageInfo h5 {
+    color: #FFFFFF;
+    font-family: font-SemiBold;
+    cursor: pointer;
+    font-size: 19px;
 }
 .imageInfo h5 {
     font-family: font-SemiBold;
@@ -63,23 +87,40 @@ ul {
 .searchEdit {
     width: auto;
 }
-.alignbtn {
-    margin-top: 0.5rem;
-}
-
-.alignbtn a{
-    text-decoration: none;
-    color: #4E5D78;
-    font-family: font-SemiBold;
+.dark .alignbtn a i{
+    color: #FFFFFF;
+    margin-left: 0.5rem;
+    font-weight: bold;
 }
 .alignbtn a i{
     color: #4E5D78;
     margin-left: 0.5rem;
     font-weight: bold;
 }
+.alignbtn {
+    margin-top: 0.5rem;
+}
+
+.dark .alignbtn a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: font-SemiBold;
+}
+.alignbtn a{
+    text-decoration: none;
+    color: #4E5D78;
+    font-family: font-SemiBold;
+}
+
 .cardFooter{
     justify-content: space-between;
     display: flex;
+}
+.dark .cardEdit h6{
+    font-family: font-Regular;
+    font-size: 14px;
+    color: #b0b2b5;
+    margin-top: 0.8rem;
 }
 .cardEdit h6{
     font-family: font-Regular;
@@ -108,7 +149,15 @@ ul {
     overflow: hidden;
     min-height: 2.6rem;
 }
+.dark .hoverChange :hover{
+    border-radius: 0.5rem;
+    background: #4e5d78;;
+    transition: all .4s ease;
+-webkit-transition: all .4s ease;
+}
 .hoverChange :hover{
+    transition: all .4s ease;
+-webkit-transition: all .4s ease;
     border-radius: 0.5rem;
     background-color: #fafafa;
 }
