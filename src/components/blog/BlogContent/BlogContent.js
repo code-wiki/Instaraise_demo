@@ -6,7 +6,7 @@ const BlogContent = (props) => {
     return (
         <div className="container">
             <div className="row mt-5 ContentEdit">
-                <>
+                <React.Fragment>
                     <div className="col-md-8">
                         <h5>
                             <strong>{props.BlogReducer.subtitle}</strong>
@@ -30,7 +30,7 @@ const BlogContent = (props) => {
                         </p>
                     </div>
                     <RelatedPostsBlog {...props} />
-                </>
+                </React.Fragment>
             </div>
         </div>
     );

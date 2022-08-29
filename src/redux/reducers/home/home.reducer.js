@@ -1,6 +1,5 @@
 import { FILTER_CARDS, TABS_SELECT } from '../../actions/index.action';
 import { CARD_DATA } from '../../../config/HomeConfig/CardConfig/config.card';
-
 const initialState = CARD_DATA;
 export const CardReducer = (state = initialState, action) => {
     switch (action.type) {
