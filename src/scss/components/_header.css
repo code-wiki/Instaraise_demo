@@ -10,6 +10,10 @@
     font-family: font-Regular;
     src: url(../../assets//font//BinancePlexRegular.ttf);
 }
+.dark .site-header{
+    background-color: #0b0e11;
+    padding: 1rem 0rem;
+}
 .site-header{
     background-color: #fafafa;
     padding: 1rem 0rem;
@@ -22,11 +26,17 @@
 .branding a {
     text-decoration: none;
 }
+
 .compName{
     text-decoration: none;
     font-family: font-Medium;
     font-weight: bold;
     font-size: 1.5rem;
+}
+.dark .collapse ul li a p{
+    font-family: font-Medium;
+    margin: 1rem;
+    color: #FFFFFF;
 }
 .collapse ul li a p{
     font-family: font-Medium;
@@ -41,15 +51,31 @@
         margin-left: 1.5rem;
     }
 }
+.dark .page-title{
+    background-color: #0b0e11;
+    padding: 0.5rem 0 1rem;
+}
 .page-title{
     background-color: #fafafa;
     padding: 0.5rem 0 1rem;
+}
+.dark .headerBelow h2{
+    color: #FFFFFF;
+    font-family: font-SemiBold;
+    font-weight: 700;
+    line-height: 3rem;
 }
 .headerBelow h2{
     font-family: font-SemiBold;
     font-weight: 700;
     line-height: 3rem;
 }
+.dark .headerBelow p{
+    color: #b0b2b5;
+    line-height: 1.7rem;
+    font-family: font-regular;
+}
+
 .headerBelow p {
     line-height: 1.7rem;
     font-family: font-regular;

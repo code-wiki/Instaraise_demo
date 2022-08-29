@@ -2,6 +2,11 @@
     padding: 0 2rem;
     margin: 0 auto;
 }
+.dark .featured{
+    border-radius: 1rem;
+    background: #181a20;
+    padding: 3rem 0 0;
+}
 .featured{
     padding: 3rem 0 0;
 }
@@ -11,12 +16,25 @@
     display: block;
     height: 21rem;
 }
+
 .featured-heading{
     padding-top: 2rem;
 }
+.dark .featured-heading h5 {
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    font-family: font-SemiBold;
+}
+
 .featured-heading h5 {
     margin-bottom: 1rem;
     font-family: font-SemiBold;
+}
+.dark .featured-heading p {
+    color: #FFFFFF;
+    font-family: font-Regular;
+    text-align: justify;
+    line-height: 1.8rem;
 }
 .featured-heading p {
     font-family: font-Regular;
@@ -27,6 +45,15 @@
 .line-btn {
     margin-top: 1.5rem;
 }
+.dark .line-btn a {
+    font-weight: 600;
+    padding: 1rem 0;
+    margin-right: 0;
+    transition: .2s;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: font-SemiBold;
+}
 .line-btn a {
     font-weight: 600;
     padding: 1rem 0;
@@ -35,6 +62,12 @@
     text-decoration: none;
     color: #4E5D78;
     font-family: font-SemiBold;
+}
+.dark .line-btn a i{
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-left: 0.5rem;
+    font-size: 110%;
 }
 .line-btn a i{
     font-weight: 700;

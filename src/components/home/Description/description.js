@@ -12,14 +12,14 @@ const Description = (props) => {
                             <React.Fragment key={elem.id}>
                                 <div className="col-md-6">
                                     <Link
-                                        onClick={() => {
-                                            // props.handleSelectedCardAction({
-                                            //     ...props.CardReducer[0],
-                                            // });
-                                            // props.handleRelatedPosts({
-                                            //     ...props.CardReducer[0],
-                                            // });
-                                        }}
+                                        // onClick={() => {
+                                        //     props.handleSelectedCardAction({
+                                        //         ...props.CardReducer[0],
+                                        //     });
+                                        //     props.handleRelatedPosts({
+                                        //         ...props.CardReducer[0],
+                                        //     });
+                                        // }}
                                         to={props.CardReducer[0].blogLink}
                                     >
                                         <img
