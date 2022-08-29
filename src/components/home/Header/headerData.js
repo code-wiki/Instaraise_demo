@@ -1,7 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { HEADER_DATA } from '../../../config/HomeConfig/HeaderConfig/config.header';
+import { ThemeContext } from '../../../routes/root';
 const HeaderData = () => {
+    const { theme, handleThemeChange } = React.useContext(ThemeContext);
     return (
         <>
             <header className="site-header">
@@ -63,6 +65,7 @@ const HeaderData = () => {
                         </ul>
                         <div className="form-inline my-2 my-lg-0">
                             <img
+                                onClick={() => handleThemeChange()}
                                 src="http://instaraise.rswebs.in/wp-content/themes/Instaraise-theme/assets/images/dark-theme.svg"
                                 alt="dark mode image"
                             />
