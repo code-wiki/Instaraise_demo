@@ -4,7 +4,7 @@ import { FOOTER_DATA } from '../../../config/HomeConfig/FooterConfig/config.foot
 
 const Footer = (props) => {
     return (
-        <footer className="bg-light pt-5 pb-4 mt-5">
+        <footer className=" pt-5 pb-4 footerdark">
             <div className="container">
                 {FOOTER_DATA.map((val, index) => (
                     <div key={index}>

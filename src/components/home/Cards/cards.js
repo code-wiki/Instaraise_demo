@@ -6,8 +6,8 @@ import CardItems from './CardItems';
 const Cards = (props) => {
     const [search, setSearch] = useState('');
     return (
-        <>
-            <div className="container mt-5">
+        <section className="featured-cards">
+            <div className="container pt-5">
                 <div className="row g-0">
                     <div className="col">
                         <ul
@@ -37,7 +37,7 @@ const Cards = (props) => {
                     />
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 
