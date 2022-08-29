@@ -2,15 +2,15 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import HomeContainer from '../container/HOME/HomeContainer';
-import { createContext, useState } from 'react';
 import BlogContainer from '../container/BLOG/BlogContainer';
 import { CARD_DATA } from '../config/HomeConfig/CardConfig/config.card';
-
-export const ThemeContext = createContext(null);
+import useLocalStorage from '../hooks/useLocalStorage';
+export const ThemeContext = React.createContext();
 const Root = () => {
-    const [theme, setTheme] = useState('light');
-    const toggleTheme = () => {
-        setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
+    const [theme, setTheme] = useLocalStorage();
+    const themeclass = theme ? 'light' : 'dark';
+    const handleThemeChange = () => {
+        setTheme();
     };
     const DETAILS_PAGE_ROUTE = CARD_DATA.map((elem) => (
         <Route
@@ -21,9 +21,9 @@ const Root = () => {
     ));
     return (
         <ThemeContext.Provider
-            value={{ theme, handleThemeChange: toggleTheme }}
+            value={{ theme, handleThemeChange: handleThemeChange }}
         >
-            <div className={theme}>
+            <div className={themeclass}>
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<HomeContainer />} />
