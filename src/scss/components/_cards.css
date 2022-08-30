@@ -69,20 +69,25 @@ ul {
     color: #607d8b;
 
 }
-.dark .imageInfo h5 {
+.dark .item-title h5 {
     color: #FFFFFF;
     font-family: font-SemiBold;
     cursor: pointer;
     font-size: 19px;
 }
-.imageInfo h5 {
+.item-title h5 {
     font-family: font-SemiBold;
     cursor: pointer;
     font-size: 19px;
 }
-
+.dark .item-desc p {
+    color: #b0b2b5;
+}
 .underDeco p a{
     text-decoration: none;
+}
+.dark .searchEdit input{
+    background-color: #2B3139;
 }
 .searchEdit {
     width: auto;
@@ -100,7 +105,6 @@ ul {
 .alignbtn {
     margin-top: 0.5rem;
 }
-
 .dark .alignbtn a{
     text-decoration: none;
     color: #FFFFFF;

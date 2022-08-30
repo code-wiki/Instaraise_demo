@@ -1,3 +1,15 @@
+.dark .bgChange{
+  background-color: #181a20;
+  padding-top: 0.1rem;
+}
+.dark .darkParaDate {
+  color: #FFFFFF;
+    text-align: justify;
+    font-family: font-regular;
+}
+.dark .blogHeaderColorChange strong{
+  color: #FFFFFF;
+}
 .ContentEdit p {
     text-align: justify;
     color: #607D8B;
@@ -8,6 +20,14 @@
 }
 .ContentEdit{
     margin-top: 2rem;
+}
+.dark .paraEdit{
+    margin-top: 2rem;
+    font-size: 15px;
+    line-height: 1.7rem;
+    font-family: font-regular;
+    color: #b0b2b5;
+    
 }
 .paraEdit{
     margin-top: 2rem;
@@ -35,6 +55,11 @@
 /* .combineCard :hover{
     background-color: red;
 } */
+.dark .sharedPost h4{
+  color: #FFFFFF;
+  font-family: font-SemiBold;
+    font-size: 1.2rem;
+}
 .sharedPost h4{
   font-family: font-SemiBold;
     font-size: 1.2rem;
@@ -50,11 +75,14 @@
   .sidebar-content {
     padding: 1em;
   }
-  .combineCard:hover{
+  /* .combineCard:hover{
     background-color: #fafafa;
-  }
+  } */
   .postpadding{
     margin-bottom: 2rem;
+  }
+  .dark .socialDark li a i{
+    color: #FFFFFF;
   }
   .sidebar-section {
     display: flex;
@@ -71,11 +99,15 @@
     text-align: justify;
     line-height: 2rem;
   }
+  .dark .textSticky p {
+    color: #FFFFFF;
+    font-family: font-Regular;
+  }
   .textSticky p {
     font-family: font-Regular;
   }
   .paraEdit  em {
-    color: #607D8B;
+    color: #b0b2b5;
     font-family: font-SemiBold;
     font-size: 15px;
   }
