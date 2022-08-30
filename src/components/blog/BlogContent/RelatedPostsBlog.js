@@ -2,6 +2,9 @@ import React from 'react';
 import BlogSocial from './BlogSocial';
 import { NavLink } from 'react-router-dom';
 const RelatedPostsBlog = (props) => {
+    const item = props.relatedBlogReducer[0];
+    const item2 = props.relatedBlogReducer[1];
+    // console.log(item);
     return (
         <>
             <div className="col-md-4">
@@ -20,24 +23,19 @@ const RelatedPostsBlog = (props) => {
                                     onClick={() => {
                                         // debugger;
                                         props.handleSelectedCardAction({
-                                            ...props.relatedBlogReducer[0],
+                                            ...item,
                                         });
                                         props.handleRelatedPosts({
-                                            ...props.relatedBlogReducer[0],
+                                            ...item,
                                         });
                                     }}
-                                    to={props.relatedBlogReducer[0].blogLink}
+                                    to={item.blogLink}
                                 >
-                                    <img
-                                        src={
-                                            props.relatedBlogReducer[0]
-                                                .image_url
-                                        }
-                                    />
+                                    <img src={item.image_url} />
                                 </NavLink>
                             </div>
                             <div className="textSticky">
-                                <p>{props.relatedBlogReducer[0].subtitle}</p>
+                                <p>{item.subtitle}</p>
                             </div>
                         </div>
                         <div className="combineCard">
@@ -46,24 +44,19 @@ const RelatedPostsBlog = (props) => {
                                     onClick={() => {
                                         // debugger;
                                         props.handleSelectedCardAction({
-                                            ...props.relatedBlogReducer[1],
+                                            ...item2,
                                         });
                                         props.handleRelatedPosts({
-                                            ...props.relatedBlogReducer[1],
+                                            ...item2,
                                         });
                                     }}
-                                    to={props.relatedBlogReducer[1].blogLink}
+                                    to={item2.blogLink}
                                 >
-                                    <img
-                                        src={
-                                            props.relatedBlogReducer[1]
-                                                .image_url
-                                        }
-                                    />
+                                    <img src={item2.image_url} />
                                 </NavLink>
                             </div>
                             <div className="textSticky">
-                                <p>{props.relatedBlogReducer[1].subtitle}</p>
+                                <p>{item2.subtitle}</p>
                             </div>
                         </div>
                     </div>
