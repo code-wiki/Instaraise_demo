@@ -3,7 +3,7 @@ import React from 'react';
 const BlogSocial = () => {
     return (
         <>
-            <ul className="d-flex">
+            <ul className="d-flex socialDark">
                 <li>
                     <a href="https://twitter.com/instaraise" target="_blank">
                         <i className="fa fa-twitter"></i>

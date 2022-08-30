@@ -10,10 +10,18 @@ const HeaderData = () => {
                 <nav className="container navbar navbar-expand-lg navbar-light">
                     <div className="branding">
                         <NavLink className="navbar-brand d-flex" to="/">
-                            <img
-                                src="http://instaraise.rswebs.in/wp-content/uploads/2022/07/logo-2.png"
-                                alt="Instaraise logo"
-                            />
+                            {theme && (
+                                <img
+                                    src="http://instaraise.rswebs.in/wp-content/uploads/2022/07/logo-2.png"
+                                    alt="Instaraise logo"
+                                />
+                            )}
+                            {!theme && (
+                                <img
+                                    src="https://blog.instaraise.io/wp-content/themes/Instaraise-theme/assets/images/logo-light.png"
+                                    alt="Instaraise logo"
+                                />
+                            )}
                             <h5 className="compName mt-1">Instaraise</h5>
                         </NavLink>
                     </div>
@@ -43,18 +51,34 @@ const HeaderData = () => {
                                     >
                                         <p>
                                             {props.headerNav}{' '}
-                                            <svg
-                                                stroke="currentColor"
-                                                fill="currentColor"
-                                                strokeWidth="0"
-                                                viewBox="0 0 24 24"
-                                                height="0.8em"
-                                                width="1em"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"></path>
-                                                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path>
-                                            </svg>
+                                            {theme && (
+                                                <svg
+                                                    stroke="currentColor"
+                                                    fill="currentColor"
+                                                    strokeWidth="0"
+                                                    viewBox="0 0 24 24"
+                                                    height="0.8em"
+                                                    width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"></path>
+                                                    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path>
+                                                </svg>
+                                            )}
+                                            {!theme && (
+                                                <svg
+                                                    stroke="currentColor"
+                                                    fill="white"
+                                                    strokeWidth="0"
+                                                    viewBox="0 0 24 24"
+                                                    height="0.8em"
+                                                    width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"></path>
+                                                    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path>
+                                                </svg>
+                                            )}
                                         </p>{' '}
                                         <span className="sr-only">
                                             (current)
@@ -64,11 +88,20 @@ const HeaderData = () => {
                             ))}
                         </ul>
                         <div className="form-inline my-2 my-lg-0">
-                            <img
-                                onClick={() => handleThemeChange()}
-                                src="http://instaraise.rswebs.in/wp-content/themes/Instaraise-theme/assets/images/dark-theme.svg"
-                                alt="dark mode image"
-                            />
+                            {theme && (
+                                <img
+                                    onClick={() => handleThemeChange()}
+                                    src="http://instaraise.rswebs.in/wp-content/themes/Instaraise-theme/assets/images/dark-theme.svg"
+                                    alt="dark mode image"
+                                />
+                            )}
+                            {!theme && (
+                                <img
+                                    onClick={() => handleThemeChange()}
+                                    src="https://blog.instaraise.io/wp-content/themes/Instaraise-theme/assets/images/light-theme.svg"
+                                    alt="dark mode image"
+                                />
+                            )}
                         </div>
                     </div>
                 </nav>
