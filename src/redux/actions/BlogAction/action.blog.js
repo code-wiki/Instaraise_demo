@@ -1,14 +1,14 @@
 import { SELECTED_CARD_DETAILS, RELATED_POSTS } from '../index.action';
 import { CARD_DATA } from '../../../config/HomeConfig/CardConfig/config.card';
+
 export const handleSelectedCardAction = (data) => {
-    console.log(data);
     return {
         type: SELECTED_CARD_DETAILS,
         payload: data,
     };
 };
+
 export const handleRelatedPosts = (data) => {
-    console.log(data.category);
     const relatedPostsFilter = nextTwoElements(data.id, CARD_DATA.length);
     return {
         type: RELATED_POSTS,
