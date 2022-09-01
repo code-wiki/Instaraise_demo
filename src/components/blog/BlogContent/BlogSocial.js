@@ -8,7 +8,7 @@ import {
 } from 'react-share';
 
 const BlogSocial = (props) => {
-    const uri = `https://elegant-sunflower-b3487c.netlify.app${props.BlogReducer.blogLink}`;
+    const uri = `https://instaraisedemo.netlify.app/${props.BlogReducer.blogLink}`;
     return (
         <>
             <ul className="d-flex socialDark">
