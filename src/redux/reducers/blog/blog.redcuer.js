@@ -4,15 +4,15 @@ import {
 } from '../../actions/index.action';
 import { CARD_DATA } from '../../../config/HomeConfig/CardConfig/config.card';
 const initialState = null;
-const SELECTED_BLOG_URL = window.location.pathname;
+const WINDOW_BLOG_URL = window.location.pathname;
 export const BlogReducer = (state = initialState, action) => {
     switch (action.type) {
         case SELECTED_CARD_DETAILS:
             return action.payload;
         default:
-            if (SELECTED_BLOG_URL != '/') {
+            if (WINDOW_BLOG_URL != '/') {
                 const BlogDetails = CARD_DATA.filter(
-                    (elem) => elem.blogLink === SELECTED_BLOG_URL
+                    (elem) => elem.blogLink === WINDOW_BLOG_URL
                 );
                 return BlogDetails[0];
             } else {
@@ -25,9 +25,9 @@ export const relatedBlogReducer = (state = [], action) => {
         case RELATED_POSTS:
             return action.payload;
         default:
-            if (SELECTED_BLOG_URL != '/') {
+            if (WINDOW_BLOG_URL != '/') {
                 const BlogDetails = CARD_DATA.filter(
-                    (elem) => elem.blogLink === SELECTED_BLOG_URL
+                    (elem) => elem.blogLink === WINDOW_BLOG_URL
                 );
                 return relatedFilter(BlogDetails[0].id, CARD_DATA.length);
             } else {
