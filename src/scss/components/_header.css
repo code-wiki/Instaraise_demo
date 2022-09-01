@@ -99,3 +99,6 @@
     font-weight: 700;
     font-size: 110%;
 }
+.chg a {
+    text-decoration: none;
+}

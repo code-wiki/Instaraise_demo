@@ -14,7 +14,9 @@ const BlogHeader = () => {
                             <Link to="/">
                                 <i className="fa fa-angle-left mt-3 pr-3"></i>
                             </Link>
-                            <h2>{props.CompName}</h2>
+                            <Link to="/">
+                                <h2>{props.CompName}</h2>
+                            </Link>
                         </div>
                     ))}
                 </div>

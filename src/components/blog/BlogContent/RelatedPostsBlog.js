@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 const RelatedPostsBlog = (props) => {
     const item = props.relatedBlogReducer[0];
     const item2 = props.relatedBlogReducer[1];
-    // console.log(item);
     return (
         <>
             <div className="col-md-4">
@@ -12,7 +11,7 @@ const RelatedPostsBlog = (props) => {
                     <div className="sidebar-content sticky-top">
                         <div className="sharedPost">
                             <h4>Share Posts</h4>
-                            <BlogSocial />
+                            <BlogSocial {...props} />
                         </div>
                         <div className="sharedPost">
                             <h4 className="postpadding">Related Posts</h4>
@@ -31,7 +30,10 @@ const RelatedPostsBlog = (props) => {
                                     }}
                                     to={item.blogLink}
                                 >
-                                    <img src={item.image_url} />
+                                    <img
+                                        src={item.image_url}
+                                        alt="realtedPost img"
+                                    />
                                 </NavLink>
                             </div>
                             <div className="textSticky">
