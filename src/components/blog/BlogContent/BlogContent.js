@@ -31,6 +31,15 @@ const BlogContent = (props) => {
                                 {props.BlogReducer.descPara}
                             </p>
                             <p className="paraEdit">
+                                {props.BlogReducer.descPara}
+                            </p>
+                            <p className="paraEdit">
+                                {props.BlogReducer.descPara}
+                            </p>
+                            <p className="paraEdit">
+                                {props.BlogReducer.descPara2}
+                            </p>
+                            <p className="paraEdit">
                                 {props.BlogReducer.descPara2}
                             </p>
                             <p className="paraEdit">
