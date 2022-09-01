@@ -19,5 +19,6 @@ const mapDispatchToProps = (dispatch) => ({
 const mapStateToProps = (state) => ({
     BlogReducer: state.BlogReducer,
     relatedBlogReducer: state.relatedBlogReducer,
+    CardReducer: state.CardReducer,
 });
 export default connect(mapStateToProps, mapDispatchToProps)(BlogContainer);
