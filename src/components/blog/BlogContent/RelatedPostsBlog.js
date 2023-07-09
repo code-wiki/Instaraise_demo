@@ -33,7 +33,7 @@ const RelatedPostsBlog = (props) => {
                                         to={item.blogLink}
                                     >
                                         <img
-                                            src={item.image_url}
+                                            src={'https://www.rd.com/wp-content/uploads/2019/11/cat-10-e1573844975155-scaled.jpg'}
                                             alt="realtedPost img"
                                         />
                                     </NavLink>
@@ -56,7 +56,7 @@ const RelatedPostsBlog = (props) => {
                                         }}
                                         to={item2.blogLink}
                                     >
-                                        <img src={item2.image_url} />
+                                        <img src={'https://www.rd.com/wp-content/uploads/2019/11/cat-10-e1573844975155-scaled.jpg'} />
                                     </NavLink>
                                 </div>
                                 <div className="textSticky">

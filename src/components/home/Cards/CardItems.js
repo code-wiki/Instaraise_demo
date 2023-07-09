@@ -24,7 +24,7 @@ const CardItems = (props) => {
                         }}
                         to={elem.blogLink}
                     >
-                        <img src={elem.image_url} alt="image_description" />
+                        <img src={'https://www.rd.com/wp-content/uploads/2019/11/cat-10-e1573844975155-scaled.jpg'} alt="image_description" />
                     </NavLink>
                     <div className="imageInfo">
                         <div className="item-title">
