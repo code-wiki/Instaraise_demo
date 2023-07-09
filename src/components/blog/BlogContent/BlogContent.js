@@ -16,7 +16,7 @@ const BlogContent = (props) => {
                                 {props.BlogReducer.cardDate}
                             </p>
                             <img
-                                src={props.BlogReducer.image_url}
+                                src={'https://www.rd.com/wp-content/uploads/2019/11/cat-10-e1573844975155-scaled.jpg'}
                                 className="img-fluid"
                                 alt="Responsive image"
                             ></img>
